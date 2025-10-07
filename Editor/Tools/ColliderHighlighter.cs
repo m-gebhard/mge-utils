@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     /// <summary>
     /// Provides a custom editor window for highlighting colliders in the scene view.

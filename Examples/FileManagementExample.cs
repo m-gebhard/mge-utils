@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
-using UniUtils.Data;
-using UniUtils.Extensions;
+using MGeLabs.Utils.Data;
+using MGeLabs.Utils.Extensions;
 
-namespace UniUtils.Examples
+namespace MGeLabs.Utils.Examples
 {
     /// <summary>
     /// Demonstrates basic encrypted file save/load operations using a custom file handling and encryption utility.

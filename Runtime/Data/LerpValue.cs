@@ -1,6 +1,6 @@
 using System;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// A generic class for managing and interpolating a value towards a target value over time.

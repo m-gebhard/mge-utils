@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// Handles runtime registration of collision and trigger events based on object tags.

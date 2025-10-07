@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extension methods for the Vector3 class.

@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UniUtils.Data;
+using MGeLabs.Utils.Data;
 using Random = System.Random;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extension methods for lists of floats and generic lists.

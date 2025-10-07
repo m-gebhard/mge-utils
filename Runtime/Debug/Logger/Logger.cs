@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
-using UniUtils.Data;
-using UniUtils.Extensions;
-using UniUtils.GameObjects;
+using MGeLabs.Utils.Data;
+using MGeLabs.Utils.Extensions;
+using MGeLabs.Utils.GameObjects;
 
-namespace UniUtils.Debugging
+namespace MGeLabs.Utils.Debugging
 {
     /// <summary>
     /// A logger class that persists log entries and saves them to a file.

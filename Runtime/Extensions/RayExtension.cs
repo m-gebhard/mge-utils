@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extensions for Rays.

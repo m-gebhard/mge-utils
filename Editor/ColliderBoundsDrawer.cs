@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     /// <summary>
     /// A MonoBehaviour that visualizes the bounds of a Collider in the Unity Editor.

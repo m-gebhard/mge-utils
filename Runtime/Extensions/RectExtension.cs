@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     public static class RectExtension
     {

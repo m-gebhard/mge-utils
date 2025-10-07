@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Represents an observable field that notifies subscribers when its value changes.

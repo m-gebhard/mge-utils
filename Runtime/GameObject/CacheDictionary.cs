@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// Represents a dictionary that caches items and provides methods to manage the cache.

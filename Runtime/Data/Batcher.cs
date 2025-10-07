@@ -2,9 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UniUtils.Extensions;
+using MGeLabs.Utils.Extensions;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Provides utility methods for processing items in batches with support for callbacks and error handling.

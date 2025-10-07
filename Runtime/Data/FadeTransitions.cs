@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Utility class for different transitions of various types.

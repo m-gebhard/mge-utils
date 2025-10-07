@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extension methods for the Color class.

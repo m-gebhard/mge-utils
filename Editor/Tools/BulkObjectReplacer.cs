@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     /// <summary>
     /// Editor window for replacing scene objects with a specified prefab.

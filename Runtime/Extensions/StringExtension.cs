@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extension methods for Strings.

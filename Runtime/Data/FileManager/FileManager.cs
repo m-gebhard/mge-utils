@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using UniUtils.Extensions;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Provides utility methods for managing files and directories within different storage locations.

@@ -1,4 +1,4 @@
-namespace UniUtils.FSM
+namespace MGeLabs.Utils.FSM
 {
     /// <summary>
     /// Represents a predicate that can be evaluated to determine a boolean condition.

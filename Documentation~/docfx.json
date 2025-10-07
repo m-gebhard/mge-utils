@@ -20,11 +20,13 @@
   ],
   "build": {
     "globalMetadata": {
-      "_appTitle": "UniUtils Documentation",
-      "_appFooter": "UniUtils Documentation",
+      "_appTitle": "MGeUtils Documentation",
+      "_appFooter": "MGeUtils Documentation",
       "_enableSearch": true,
       "_appLogoPath": "templates/utils/images/logo.svg",
-      "_appFaviconPath ": "templates/utils/images/logo.svg"
+      "_appFaviconPath ": "templates/utils/images/logo.svg",
+      "pdf": true,
+      "pdfTocPage": true
     },
     "resource": [
       {
@@ -50,8 +52,7 @@
     ],
     "template": [
       "default",
-      "templates/unity",
-      "templates/utils"
+      "modern"
     ],
     "dest": "_site"
   }

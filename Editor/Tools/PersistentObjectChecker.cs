@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UniUtils.GameObjects;
+using MGeLabs.Utils.GameObjects;
 
 #if UNITY_EDITOR
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     public class PersistentObjectChecker : EditorWindow
     {

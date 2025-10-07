@@ -2,9 +2,9 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UniUtils.GameObjects;
+using MGeLabs.Utils.GameObjects;
 
-namespace UniUtils.SceneManagement
+namespace MGeLabs.Utils.SceneManagement
 {
     /// <summary>
     /// Manages scene loading operations in Unity.

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniUtils.EventSystem
+namespace MGeLabs.Utils.EventSystem
 {
     /// <summary>
     /// Abstract class representing an event channel that can subscribe, unsubscribe, and publish events.

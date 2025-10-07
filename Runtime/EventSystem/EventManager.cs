@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UniUtils.GameObjects;
-using UniUtils.Reflection;
+using MGeLabs.Utils.GameObjects;
+using MGeLabs.Utils.Reflection;
 
-namespace UniUtils.EventSystem
+namespace MGeLabs.Utils.EventSystem
 {
     /// <summary>
     /// Manages event channels and provides methods to subscribe and publish events.

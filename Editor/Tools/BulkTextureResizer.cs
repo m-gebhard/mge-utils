@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     /// <summary>
     /// Editor window for setting the maximum texture size and enabling compression for textures in specified folders.

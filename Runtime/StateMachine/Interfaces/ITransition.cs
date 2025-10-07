@@ -1,4 +1,4 @@
-namespace UniUtils.FSM
+namespace MGeLabs.Utils.FSM
 {
     /// <summary>
     /// Represents a transition between states in a state machine.

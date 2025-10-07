@@ -1,4 +1,4 @@
-namespace UniUtils.EventSystem
+namespace MGeLabs.Utils.EventSystem
 {
     /// <summary>
     /// Interface for events with a specific event channel.

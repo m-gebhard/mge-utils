@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace UniUtils.Debugging
+namespace MGeLabs.Utils.Debugging
 {
     /// <summary>
     /// Draws the path of a NavMeshAgent using a LineRenderer.

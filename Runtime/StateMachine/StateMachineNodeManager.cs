@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace UniUtils.FSM
+namespace MGeLabs.Utils.FSM
 {
     /// <summary>
     /// Manages the nodes and transitions for a state machine.

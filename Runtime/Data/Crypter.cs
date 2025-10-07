@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Provides methods for encrypting and decrypting strings using a simple XOR-based algorithm.

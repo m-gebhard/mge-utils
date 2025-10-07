@@ -1,6 +1,6 @@
 using System;
 
-namespace UniUtils.Debugging
+namespace MGeLabs.Utils.Debugging
 {
     /// <summary>
     /// Represents a bitmask for categorizing log types in debugging.

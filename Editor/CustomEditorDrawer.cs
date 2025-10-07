@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-namespace UniUtils.Editor
+namespace MGeLabs.Utils.Editor
 {
     /// <summary>
     /// Abstract base class for creating custom property drawers in the Unity Editor.
@@ -17,7 +17,7 @@ namespace UniUtils.Editor
     /// <code>
     /// using UnityEngine;
     /// using UnityEditor;
-    /// using UniUtils.Editor;
+    /// using MGeLabs.Utils.Editor;
     ///
     /// public class ExampleComponent : MonoBehaviour
     /// {

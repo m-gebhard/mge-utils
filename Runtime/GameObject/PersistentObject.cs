@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// A Unity component that assigns a unique GUID to the object for persistent identification.

@@ -1,7 +1,7 @@
 using System;
 using Random = UnityEngine.Random;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extensions for enums.

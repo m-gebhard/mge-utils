@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace UniUtils.Reflection
+namespace MGeLabs.Utils.Reflection
 {
     /// <summary>
     /// Utility class for retrieving types from predefined assemblies.

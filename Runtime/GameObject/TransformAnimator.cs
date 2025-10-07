@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// A component that animates the position, rotation, and scale of a target Transform

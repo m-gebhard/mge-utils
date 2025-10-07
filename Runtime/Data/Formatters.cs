@@ -1,7 +1,7 @@
 using System.Globalization;
 using UnityEngine;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Provides utility methods for formatting values.

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
+using MGeLabs.Utils.Extensions;
+using MGeLabs.Utils.FSM;
 using UnityEngine;
 using UnityEngine.AI;
-using UniUtils.Extensions;
-using UniUtils.FSM;
 
-namespace UniUtils.Examples
+namespace MGeLabs.Utils.Examples
 {
     /// <summary>
     /// Demonstrates the use of a state machine for controlling a NavMeshAgent's behavior.

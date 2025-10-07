@@ -1,4 +1,4 @@
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Specifies the storage location for files within the application.

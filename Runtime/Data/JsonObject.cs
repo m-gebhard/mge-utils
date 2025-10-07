@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Represents a generic JSON object that can be serialized and deserialized using Unity's JsonUtility.

@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UniUtils.Extensions;
+using MGeLabs.Utils.Extensions;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// A generic object pool for managing reusable objects of type T.

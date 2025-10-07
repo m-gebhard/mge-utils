@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UniUtils.Editor;
-using UniUtils.Extensions;
-using UniUtils.GameObjects;
+using MGeLabs.Utils.Editor;
+using MGeLabs.Utils.Extensions;
+using MGeLabs.Utils.GameObjects;
 
-namespace UniUtils.Examples
+namespace MGeLabs.Utils.Examples
 {
     /// <summary>
     /// A simple music player that continuously plays a shuffled list of audio tracks

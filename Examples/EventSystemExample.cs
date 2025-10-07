@@ -1,10 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.Scripting;
-using UniUtils.EventSystem;
-using UniUtils.Extensions;
+using MGeLabs.Utils.EventSystem;
+using MGeLabs.Utils.Extensions;
 
-namespace UniUtils.Examples
+namespace MGeLabs.Utils.Examples
 {
     /// <summary>
     /// Example demonstrating how to publish and subscribe to a custom input event

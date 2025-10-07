@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using UniUtils.Extensions;
+using MGeLabs.Utils.Extensions;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     /// <summary>
     /// Represents a file handle that provides methods for file operations such as reading, writing, and deleting files.

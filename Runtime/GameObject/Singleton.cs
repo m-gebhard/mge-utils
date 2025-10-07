@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UniUtils.GameObjects
+namespace MGeLabs.Utils.GameObjects
 {
     /// <summary>
     /// Abstract base class for creating singleton MonoBehaviour instances.

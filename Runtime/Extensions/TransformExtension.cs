@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace UniUtils.Extensions
+namespace MGeLabs.Utils.Extensions
 {
     /// <summary>
     /// Provides extension methods for the Transform class.

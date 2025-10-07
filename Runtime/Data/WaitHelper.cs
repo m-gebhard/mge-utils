@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UniUtils.Data
+namespace MGeLabs.Utils.Data
 {
     public static class WaitHelper
     {

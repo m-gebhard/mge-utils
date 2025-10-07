@@ -1,9 +1,9 @@
-# UniUtils – C# Utilities & Extensions for Unity
+# MGeUtils – C# Utilities & Extensions for Unity
 
 A lightweight collection of modular C# utilities and extensions designed to streamline Unity development.  
 These tools help you prototype faster, write cleaner code, and reduce boilerplate.
 
-> 📘 **Full documentation is available online:** [UniUtils Docs](https://m-gebhard.github.io/uni-utils/api/UniUtils.Data.html)
+> 📘 **Full documentation is available online:** [MGeUtils Docs](https://m-gebhard.github.io/mge-utils/api/UniUtils.Data.html)
 
 ---
 
@@ -36,7 +36,7 @@ This package includes a wide range of utility scripts and extensions:
 Open the Package Manager, click the "+" icon, select **Add package from git URL...**, and enter:
 
 ```
-https://github.com/m-gebhard/uni-utils.git
+https://github.com/m-gebhard/mge-utils.git
 ```
 
 ### Option 2: Unity Package
@@ -54,7 +54,7 @@ Supports **Unity 2023.1 and newer**.
 ## Contributing 🖐️
 
 Contributions and feedback are welcome! Please open issues or submit pull requests on
-the [GitHub repository](https://github.com/m-gebhard/uni-utils).
+the [GitHub repository](https://github.com/m-gebhard/mge-utils).
 
 ---
 
@@ -66,4 +66,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Disclaimer
 
-UniUtils is an independent library and is not affiliated with Unity Technologies or endorsed by Unity in any way.
+MGeUtils is an independent library and is not affiliated with Unity Technologies or endorsed by Unity in any way.
