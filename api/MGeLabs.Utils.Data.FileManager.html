@@ -379,13 +379,13 @@ If the directory does not exist, it is created.</p>
   
   
   <a id="MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_" data-uid="MGeLabs.Utils.Data.FileManager.GetFilesInDirectory*"></a>
-  <h4 id="MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_" data-uid="MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)">GetFilesInDirectory(String, EStorageLocation)</h4>
+  <h4 id="MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_System_String_" data-uid="MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.String)">GetFilesInDirectory(String, EStorageLocation, String)</h4>
   <div class="markdown level1 summary"><p>Retrieves a list of files from a specified directory within a given storage location.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;FileHandle&gt; GetFilesInDirectory(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;FileHandle&gt; GetFilesInDirectory(string relativePath, EStorageLocation location = EStorageLocation.Persistent, string searchPattern = &quot;*.*&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -409,6 +409,12 @@ If the directory does not exist, it is created.</p>
         <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="MGeLabs.Utils.Data.EStorageLocation.html#MGeLabs_Utils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchPattern</span></td>
+        <td><p>The search pattern to filter files. Defaults to &quot;<em>.</em>&quot; (all files).</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -427,8 +433,8 @@ If the directory does not exist, it is created.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation__examples">Examples</h5>
-  <pre><code>List&lt;FileHandle> files = FileManager.GetFilesInDirectory(&quot;Logs&quot;);
+  <h5 id="MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_System_String__examples">Examples</h5>
+  <pre><code>List&lt;FileHandle> files = FileManager.GetFilesInDirectory(&quot;Logs&quot;, searchPattern: &quot;*.log&quot;);
 foreach (FileHandle file in files)
     file.Delete();</code></pre>
 

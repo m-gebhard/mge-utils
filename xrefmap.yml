@@ -607,12 +607,12 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.FileManager.EnsureDirectoryExists
   nameWithType: FileManager.EnsureDirectoryExists
-- uid: MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)
-  name: GetFilesInDirectory(String, EStorageLocation)
-  href: api/MGeLabs.Utils.Data.FileManager.html#MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_
-  commentId: M:MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)
-  fullName: MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation)
-  nameWithType: FileManager.GetFilesInDirectory(String, EStorageLocation)
+- uid: MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.String)
+  name: GetFilesInDirectory(String, EStorageLocation, String)
+  href: api/MGeLabs.Utils.Data.FileManager.html#MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_System_String_
+  commentId: M:MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.String)
+  fullName: MGeLabs.Utils.Data.FileManager.GetFilesInDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, System.String)
+  nameWithType: FileManager.GetFilesInDirectory(String, EStorageLocation, String)
 - uid: MGeLabs.Utils.Data.FileManager.GetFilesInDirectory*
   name: GetFilesInDirectory
   href: api/MGeLabs.Utils.Data.FileManager.html#MGeLabs_Utils_Data_FileManager_GetFilesInDirectory_
