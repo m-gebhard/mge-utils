@@ -16,17 +16,19 @@ namespace MGeLabs.Utils.Data
         /// </summary>
         /// <param name="relativePath">The relative path to the directory from which to retrieve files.</param>
         /// <param name="location">The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <param name="searchPattern">The search pattern to filter files. Defaults to "*.*" (all files).</param>
         /// <returns>A list of <see cref="FileHandle"/> objects representing the files in the specified directory. If the directory does not exist, an empty list is returned.</returns>
         /// <example>
         /// <code>
-        /// List&lt;FileHandle&gt; files = FileManager.GetFilesInDirectory("Logs");
+        /// List&lt;FileHandle&gt; files = FileManager.GetFilesInDirectory("Logs", searchPattern: "*.log");
         /// foreach (FileHandle file in files)
         ///     file.Delete();
         /// </code>
         /// </example>
         public static List<FileHandle> GetFilesInDirectory(
             string relativePath,
-            EStorageLocation location = EStorageLocation.Persistent
+            EStorageLocation location = EStorageLocation.Persistent,
+            string searchPattern = "*.*"
         )
         {
             string rootPath = GetRootPath(location);
@@ -35,7 +37,7 @@ namespace MGeLabs.Utils.Data
             if (!Directory.Exists(fullDirPath))
                 return new List<FileHandle>();
 
-            string[] files = Directory.GetFiles(fullDirPath);
+            string[] files = Directory.GetFiles(fullDirPath, searchPattern);
             return files
                 .Select(fullFilePath =>
                 {

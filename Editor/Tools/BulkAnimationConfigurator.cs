@@ -119,7 +119,7 @@ namespace MGeLabs.Utils.Editor
                 EditorGUI.indentLevel++;
                 renameFormat = EditorGUILayout.TextField("Rename Format", renameFormat);
                 EditorGUILayout.LabelField(
-                    "{FileName} - Filename, {ClipName} - Original Clip Name, {ClipIndex} - Clip Index",
+                    "{fileName} - Filename, {clipName} - Original Clip Name, {clipIndex} - Clip Index",
                     EditorStyles.miniLabel);
                 EditorGUI.indentLevel--;
                 EditorGUILayout.Space(5);
