@@ -34,7 +34,7 @@ namespace MGeLabs.Utils.Editor
         /// <summary>
         /// Opens the Object Replacer editor window.
         /// </summary>
-        [MenuItem("Tools/Utils/Bulk Object Replacer")]
+        [MenuItem("Tools/MGe Labs/Bulk Object Replacer")]
         public static void ShowWindow()
         {
             GetWindow<BulkObjectReplacer>("Bulk Object Replacer");

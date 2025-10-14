@@ -58,7 +58,7 @@ namespace MGeLabs.Utils.Editor
         /// <summary>
         /// Opens the Collider Highlighter window from the Unity Editor menu.
         /// </summary>
-        [MenuItem("Tools/Utils/Collider Highlighter")]
+        [MenuItem("Tools/MGe Labs/Collider Highlighter")]
         public static void ShowWindow()
         {
             GetWindow<ColliderHighlighter>("Collider Highlighter").Show();
@@ -77,6 +77,8 @@ namespace MGeLabs.Utils.Editor
             EditorGUILayout.Space();
             EditorGUILayout.LabelField("Collider Counts", EditorStyles.boldLabel);
             EditorGUILayout.LabelField($"Trigger Colliders: {triggerCount}");
+
+            if (onlyTriggers) return;
             EditorGUILayout.LabelField($"Normal Colliders: {normalCount}");
             EditorGUILayout.LabelField($"Total: {triggerCount + normalCount}");
         }

@@ -11,7 +11,7 @@ namespace MGeLabs.Utils.Editor
         /// <summary>
         /// Editor tool to check for duplicate GUIDs in the scene
         /// </summary>
-        [MenuItem("Tools/Utils/Check Duplicate GUIDs")]
+        [MenuItem("Tools/MGe Labs/Check Duplicate GUIDs")]
         public static void CheckForDuplicateGUIDs()
         {
             PersistentObject[] allObjects = FindObjectsByType<PersistentObject>(FindObjectsSortMode.None);

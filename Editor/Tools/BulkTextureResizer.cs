@@ -39,7 +39,7 @@ namespace MGeLabs.Utils.Editor
         /// <summary>
         /// Shows the Texture Size Editor window.
         /// </summary>
-        [MenuItem("Tools/Utils/Bulk Texture Resizer")]
+        [MenuItem("Tools/MGe Labs/Bulk Texture Resizer")]
         public static void ShowWindow()
         {
             GetWindow<BulkTextureResizer>("Bulk Texture Resizer");
