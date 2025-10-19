@@ -17,6 +17,8 @@ namespace MGeLabs.Utils.Data
         public virtual EStorageLocation Location { get; }
         /// <returns name="FileName">The name of the file without the directory path.</returns>
         public virtual string FileName => Path.GetFileName(FullPath);
+        /// <returns name="FileNameWithoutExtension">The name of the file without the directory path and file extension.</returns>
+        public virtual string FileNameWithoutExtension => Path.GetFileNameWithoutExtension(FullPath);
         /// <returns name="RelativePath">The relative path of the file from the root of the specified storage location.</returns>
         public virtual string RelativePath => Path.GetRelativePath(FileManager.GetRootPath(Location), FullPath);
         /// <returns name="Exists">Returns <c>true</c> if the file exists; otherwise, <c>false</c>.</returns>

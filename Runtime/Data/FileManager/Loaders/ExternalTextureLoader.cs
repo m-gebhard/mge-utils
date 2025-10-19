@@ -26,7 +26,7 @@ namespace MGeLabs.Utils.Data
         protected override IEnumerator LoadSingleFileRoutine(
             FileHandle handle,
             Action<Texture2D> onLoadingFinished,
-            Action<FileHandle, UnityWebRequest.Result> onError = null
+            Action<FileHandle, int> onError = null
         )
         {
             string url = "file:///" + handle.FullPath.Replace("\\", "/");
@@ -50,7 +50,7 @@ namespace MGeLabs.Utils.Data
             }
             else
             {
-                onError?.Invoke(handle, www.result);
+                onError?.Invoke(handle, (int)www.result);
             }
         }
     }

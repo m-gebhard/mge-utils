@@ -31,7 +31,7 @@ namespace MGeLabs.Utils.Data
         /// Callback invoked after each batch of files is loaded; receives the full list of currently loaded items.
         /// </param>
         /// <param name="onError">
-        /// Callback invoked for each file that fails to load; receives the file handle and the error result.
+        /// Callback invoked for each file that fails to load; receives the file handle and an integer error code.
         /// </param>
         /// <param name="loadBatchSize">The number of files to load per batch (default is 10).</param>
         /// <returns>An enumerator for the coroutine.</returns>
@@ -40,7 +40,7 @@ namespace MGeLabs.Utils.Data
             EStorageLocation location = EStorageLocation.DataPath,
             Action<IReadOnlyList<T>> onLoadingFinished = null,
             Action<IReadOnlyList<T>> onBatchFinished = null,
-            Action<FileHandle, UnityWebRequest.Result> onError = null,
+            Action<FileHandle, int> onError = null,
             int loadBatchSize = 10
         )
         {
@@ -82,7 +82,7 @@ namespace MGeLabs.Utils.Data
         protected abstract IEnumerator LoadSingleFileRoutine(
             FileHandle handle,
             Action<T> onLoadingFinished,
-            Action<FileHandle, UnityWebRequest.Result> onError = null
+            Action<FileHandle, int> onError = null
         );
     }
 }
