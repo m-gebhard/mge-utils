@@ -173,15 +173,15 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType
   nameWithType: ExternalAudioLoader.GetAudioType
-- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name: LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, UnityWebRequest.Result>)
-  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_AudioClip__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
-  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, UnityWebRequest.Result))
-  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<AudioClip>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of AudioClip), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
-  nameWithType: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, UnityWebRequest.Result>)
-  nameWithType.vb: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name: LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, Int32>)
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_AudioClip__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, Int32))
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<AudioClip>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of AudioClip), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  nameWithType: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, Int32>)
+  nameWithType.vb: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine*
   name: LoadSingleFileRoutine
   href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_
@@ -228,15 +228,15 @@ references:
   fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).FindFilesInDirectory
   nameWithType: ExternalFileLoaderBase<T>.FindFilesInDirectory
   nameWithType.vb: ExternalFileLoaderBase(Of T).FindFilesInDirectory
-- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)
-  name: LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, UnityWebRequest.Result>, Int32)
-  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__System_Int32_
-  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)
-  name.vb: LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, UnityWebRequest.Result), Int32)
-  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>, System.Int32)
-  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result), System.Int32)
-  nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, UnityWebRequest.Result>, Int32)
-  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, UnityWebRequest.Result), Int32)
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
+  name: LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, Int32>, Int32)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
+  name.vb: LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, Int32), Int32)
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>, System.Int32)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32), System.Int32)
+  nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, Int32>, Int32)
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, Int32), Int32)
 - uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*
   name: LoadFromDirectory
   href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_
@@ -246,15 +246,15 @@ references:
   fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory
   nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory
   nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory
-- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name: LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, UnityWebRequest.Result>)
-  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
-  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, UnityWebRequest.Result))
-  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<T>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of T), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
-  nameWithType: ExternalFileLoaderBase<T>.LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, UnityWebRequest.Result>)
-  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name: LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, Int32>)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, Int32))
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<T>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of T), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  nameWithType: ExternalFileLoaderBase<T>.LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, Int32>)
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*
   name: LoadSingleFileRoutine
   href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_
@@ -287,15 +287,15 @@ references:
   commentId: T:MGeLabs.Utils.Data.ExternalTextureLoader
   fullName: MGeLabs.Utils.Data.ExternalTextureLoader
   nameWithType: ExternalTextureLoader
-- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name: LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, UnityWebRequest.Result>)
-  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_Texture2D__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
-  commentId: M:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
-  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, UnityWebRequest.Result))
-  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<Texture2D>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of Texture2D), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
-  nameWithType: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, UnityWebRequest.Result>)
-  nameWithType.vb: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name: LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, Int32>)
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_Texture2D__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, Int32))
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<Texture2D>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of Texture2D), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  nameWithType: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, Int32>)
+  nameWithType.vb: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine*
   name: LoadSingleFileRoutine
   href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_

@@ -224,13 +224,13 @@ Can be extended to support different file types by implementing the abstract met
   
   
   <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*"></a>
-  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__System_Int32_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)">LoadFromDirectory(String, EStorageLocation, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;FileHandle, UnityWebRequest.Result&gt;, Int32)</h4>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)">LoadFromDirectory(String, EStorageLocation, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;FileHandle, Int32&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Loads files from a specified directory asynchronously in batches.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual IEnumerator LoadFromDirectory(string relativePath, EStorageLocation location = EStorageLocation.DataPath, Action&lt;IReadOnlyList&lt;T&gt;&gt; onLoadingFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;FileHandle, UnityWebRequest.Result&gt; onError = null, int loadBatchSize = 10)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual IEnumerator LoadFromDirectory(string relativePath, EStorageLocation location = EStorageLocation.DataPath, Action&lt;IReadOnlyList&lt;T&gt;&gt; onLoadingFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;FileHandle, int&gt; onError = null, int loadBatchSize = 10)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,9 +267,9 @@ Can be extended to support different file types by implementing the abstract met
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">UnityWebRequest.Result</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
-        <td><p>Callback invoked for each file that fails to load; receives the file handle and the error result.</p>
+        <td><p>Callback invoked for each file that fails to load; receives the file handle and an integer error code.</p>
 </td>
       </tr>
       <tr>
@@ -299,14 +299,14 @@ Can be extended to support different file types by implementing the abstract met
   
   
   <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*"></a>
-  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})">LoadSingleFileRoutine(FileHandle, Action&lt;T&gt;, Action&lt;FileHandle, UnityWebRequest.Result&gt;)</h4>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})">LoadSingleFileRoutine(FileHandle, Action&lt;T&gt;, Action&lt;FileHandle, Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Loads a single file asynchronously.
 Must be implemented by derived classes to handle the loading/parsing of the specific file type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract IEnumerator LoadSingleFileRoutine(FileHandle handle, Action&lt;T&gt; onLoadingFinished, Action&lt;FileHandle, UnityWebRequest.Result&gt; onError = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerator LoadSingleFileRoutine(FileHandle handle, Action&lt;T&gt; onLoadingFinished, Action&lt;FileHandle, int&gt; onError = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -331,7 +331,7 @@ Must be implemented by derived classes to handle the loading/parsing of the spec
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">UnityWebRequest.Result</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
         <td><p>Callback invoked if the file fails to load.</p>
 </td>
