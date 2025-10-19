@@ -11,6 +11,8 @@ namespace MGeLabs.Utils.Data
     /// </summary>
     public static class Batcher
     {
+        #region Public Methods
+
         /// <summary>
         /// Executes an action on a list of items in batches, with optional callbacks for various stages of processing.
         /// </summary>
@@ -96,6 +98,95 @@ namespace MGeLabs.Utils.Data
         }
 
         /// <summary>
+        /// Processes a list of items in batches, where each item is processed using a coroutine (IEnumerator).
+        /// </summary>
+        /// <typeparam name="T">The type of items in the list.</typeparam>
+        /// <param name="itemsList">The list of items to process.</param>
+        /// <param name="routineOnItem">The coroutine to execute for each item.</param>
+        /// <param name="itemsPerBatch">The number of items to process per batch. Defaults to 5.</param>
+        /// <param name="batchDelay">The delay (in seconds) between processing batches. Defaults to 0.1f.</param>
+        /// <param name="onItemProcessStart">
+        /// Optional callback invoked before processing each item;
+        /// receives the item as <c>T</c>.
+        /// </param>
+        /// <param name="onItemProcessFinished">
+        /// Optional callback invoked after processing each item;
+        /// receives the item as <c>T</c> and a <c>bool</c> indicating success.
+        /// </param>
+        /// <param name="onBatchStart">
+        /// Optional callback invoked before processing each batch;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onBatchFinished">
+        /// Optional callback invoked when a batch is completed;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onFinished">
+        /// Optional callback invoked when all items have been processed;
+        /// receives the full list of processed items as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <returns>An enumerator that can be used to execute the batches over time.</returns>
+        /// <exception cref="System.ArgumentNullException">Thrown if <paramref name="routineOnItem"/> is null.</exception>
+        /// <example>
+        /// <code>
+        /// public class AudioLoaderExample : MonoBehaviour
+        /// {
+        ///     void Start()
+        ///     {
+        ///         List&lt;int&gt; numbers = new List&lt;int&gt; { 1, 2, 3, 4, 5, 6, 7 };
+        ///         StartCoroutine(Batcher.ProcessInBatches(
+        ///             numbers,
+        ///             number =&gt; ProcessNumberCoroutine(number),
+        ///             itemsPerBatch: 3,
+        ///             batchDelay: 0.5f,
+        ///             onBatchStart: batch =&gt; Debug.Log($"Batch starting: {string.Join(\", \", batch)}"),
+        ///             onBatchFinished: batch =&gt; Debug.Log($"Batch finished: {string.Join(\", \", batch)}"),
+        ///             onFinished: all =&gt; Debug.Log("All items processed")
+        ///         ));
+        ///     }
+        ///
+        ///     private IEnumerator ProcessNumberCoroutine(int number)
+        ///     {
+        ///         Debug.Log($"Processing {number}");
+        ///         // Simulate async work
+        ///         yield return null;
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
+        public static IEnumerator ProcessInBatches<T>(
+            IReadOnlyList<T> itemsList,
+            Func<T, IEnumerator> routineOnItem,
+            int itemsPerBatch = 5,
+            float batchDelay = 0.1f,
+            Action<T> onItemProcessStart = null,
+            Action<T, bool> onItemProcessFinished = null,
+            Action<IReadOnlyList<T>> onBatchStart = null,
+            Action<IReadOnlyList<T>> onBatchFinished = null,
+            Action<IReadOnlyList<T>> onFinished = null
+        )
+        {
+            if (routineOnItem == null)
+                throw new ArgumentNullException(nameof(routineOnItem));
+
+            if (itemsList == null || itemsList.Count == 0)
+                yield break;
+
+            List<List<T>> preBatchedLists = itemsList.ToList().Chunk(itemsPerBatch);
+
+            yield return ProcessBatches(
+                preBatchedLists,
+                routineOnItem,
+                batchDelay,
+                onItemProcessStart,
+                onItemProcessFinished,
+                onBatchStart,
+                onBatchFinished,
+                onFinished
+            );
+        }
+
+        /// <summary>
         /// Executes an action on pre-batched lists of items, with optional callbacks for various stages of processing.
         /// </summary>
         /// <typeparam name="T">The type of items in the batches.</typeparam>
@@ -174,6 +265,65 @@ namespace MGeLabs.Utils.Data
                 onError
             );
         }
+
+        /// <summary>
+        /// Processes pre-batched lists of items, where each item is processed using a coroutine (IEnumerator).
+        /// </summary>
+        /// <typeparam name="T">The type of items in the batches.</typeparam>
+        /// <param name="preBatchedLists">The pre-batched lists of items to process.</param>
+        /// <param name="routineOnItem">The coroutine to execute for each item.</param>
+        /// <param name="batchDelay">The delay (in seconds) between processing batches. Defaults to 0.1f.</param>
+        /// <param name="onItemProcessStart">
+        /// Optional callback invoked before processing each item;
+        /// receives the item as <c>T</c>.
+        /// </param>
+        /// <param name="onItemProcessFinished">
+        /// Optional callback invoked after processing each item;
+        /// receives the item as <c>T</c> and a <c>bool</c> indicating success.
+        /// </param>
+        /// <param name="onBatchStart">
+        /// Optional callback invoked before processing each batch;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onBatchFinished">
+        /// Optional callback invoked when a batch is completed;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onFinished">
+        /// Optional callback invoked when all items have been processed;
+        /// receives the full list of processed items as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <returns>An enumerator that can be used to execute the batches over time.</returns>
+        /// <exception cref="System.ArgumentNullException">Thrown if <paramref name="routineOnItem"/> is null.</exception>
+        public static IEnumerator ProcessPreBatched<T>(
+            IReadOnlyList<IReadOnlyList<T>> preBatchedLists,
+            Func<T, IEnumerator> routineOnItem,
+            float batchDelay = 0.1f,
+            Action<T> onItemProcessStart = null,
+            Action<T, bool> onItemProcessFinished = null,
+            Action<IReadOnlyList<T>> onBatchStart = null,
+            Action<IReadOnlyList<T>> onBatchFinished = null,
+            Action<IReadOnlyList<T>> onFinished = null
+        )
+        {
+            if (routineOnItem == null)
+                throw new ArgumentNullException(nameof(routineOnItem));
+
+            yield return ProcessBatches(
+                preBatchedLists,
+                routineOnItem,
+                batchDelay,
+                onItemProcessStart,
+                onItemProcessFinished,
+                onBatchStart,
+                onBatchFinished,
+                onFinished
+            );
+        }
+
+        #endregion
+
+        #region Batch Processing
 
         /// <summary>
         /// Executes an action on a series of batches, with optional callbacks for various stages of processing.
@@ -259,6 +409,73 @@ namespace MGeLabs.Utils.Data
         }
 
         /// <summary>
+        /// Processes a series of pre-batched lists of items, where each item is processed using a coroutine (IEnumerator).
+        /// </summary>
+        /// <typeparam name="T">The type of items in the batches.</typeparam>
+        /// <param name="batches">The pre-batched lists of items to process.</param>
+        /// <param name="routineOnItem">The coroutine to execute for each item.</param>
+        /// <param name="batchDelay">The delay (in seconds) between processing batches.</param>
+        /// <param name="onItemProcessStart">
+        /// Optional callback invoked before processing each item;
+        /// receives the item as <c>T</c>.
+        /// </param>
+        /// <param name="onItemProcessFinished">
+        /// Optional callback invoked after processing each item;
+        /// receives the item as <c>T</c> and a <c>bool</c> indicating success.
+        /// </param>
+        /// <param name="onBatchStart">
+        /// Optional callback invoked before processing each batch;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onBatchFinished">
+        /// Optional callback invoked when a batch is completed;
+        /// receives the batch as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <param name="onFinished">
+        /// Optional callback invoked when all items have been processed;
+        /// receives the full list of processed items as <c>IReadOnlyList&lt;T&gt;</c>.
+        /// </param>
+        /// <returns>An enumerator that can be used to execute the batches over time.</returns>
+        private static IEnumerator ProcessBatches<T>(
+            IReadOnlyList<IReadOnlyList<T>> batches,
+            Func<T, IEnumerator> routineOnItem,
+            float batchDelay,
+            Action<T> onItemProcessStart,
+            Action<T, bool> onItemProcessFinished,
+            Action<IReadOnlyList<T>> onBatchStart,
+            Action<IReadOnlyList<T>> onBatchFinished,
+            Action<IReadOnlyList<T>> onFinished
+        )
+        {
+            if (batches == null || batches.Count == 0)
+                yield break;
+
+            List<T> allProcessed = onFinished != null ? new List<T>() : null;
+
+            foreach (IReadOnlyList<T> batch in batches)
+            {
+                onBatchStart?.Invoke(batch);
+
+                foreach (T item in batch)
+                {
+                    onItemProcessStart?.Invoke(item);
+
+                    yield return routineOnItem(item);
+
+                    onItemProcessFinished?.Invoke(item, true);
+                    allProcessed?.Add(item);
+                }
+
+                onBatchFinished?.Invoke(batch);
+
+                if (batchDelay > 0f)
+                    yield return WaitHelper.WaitForSeconds(batchDelay);
+            }
+
+            onFinished?.Invoke(allProcessed);
+        }
+
+        /// <summary>
         /// Processes a single item by executing the provided action and handling any errors that occur.
         /// </summary>
         /// <typeparam name="T">The type of the item to process.</typeparam>
@@ -299,5 +516,7 @@ namespace MGeLabs.Utils.Data
 
             return isProcessed;
         }
+
+        #endregion
     }
 }
