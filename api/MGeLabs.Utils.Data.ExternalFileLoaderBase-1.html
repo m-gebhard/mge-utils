@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExternalFileLoaderBase&lt;T&gt;
+   | MGeUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExternalFileLoaderBase&lt;T&gt;
+   | MGeUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1">
+  
+  
+  <h1 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1" class="text-break">Class ExternalFileLoaderBase&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract base class for loading external files of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.
+Can be extended to support different file types by implementing the abstract methods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ExternalFileLoaderBase&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="MGeLabs.Utils.Data.ExternalAudioLoader.html">ExternalAudioLoader</a></div>
+      <div class="level2"><a class="xref" href="MGeLabs.Utils.Data.ExternalTextureLoader.html">ExternalTextureLoader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MGeLabs.Utils.Data.html">MGeLabs.Utils.Data</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ExternalFileLoaderBase&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of data to be returned (AudioClip, VideoClip, ...).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_SupportedExtensions_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions*"></a>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_SupportedExtensions" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions">SupportedExtensions</h4>
+  <div class="markdown level1 summary"><p>Gets the list of supported file extensions for this loader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract List&lt;string&gt; SupportedExtensions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_FindFilesInDirectory_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory*"></a>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_FindFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)">FindFilesInDirectory(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Finds files in the specified directory that match the supported extensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;FileHandle&gt; FindFilesInDirectory(string relativePath, EStorageLocation location = EStorageLocation.DataPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path to the directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MGeLabs.Utils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location of the directory (default is DataPath).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>&gt;</td>
+        <td><p>A list of file handles for the matching files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*"></a>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__System_Int32_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)">LoadFromDirectory(String, EStorageLocation, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;FileHandle, UnityWebRequest.Result&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Loads files from a specified directory asynchronously in batches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerator LoadFromDirectory(string relativePath, EStorageLocation location = EStorageLocation.DataPath, Action&lt;IReadOnlyList&lt;T&gt;&gt; onLoadingFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;FileHandle, UnityWebRequest.Result&gt; onError = null, int loadBatchSize = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path to the directory containing the files.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MGeLabs.Utils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location of the directory (default is DataPath).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onLoadingFinished</span></td>
+        <td><p>Callback invoked when all files have been loaded successfully; receives the list of loaded items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchFinished</span></td>
+        <td><p>Callback invoked after each batch of files is loaded; receives the full list of currently loaded items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">UnityWebRequest.Result</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Callback invoked for each file that fails to load; receives the file handle and the error result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">loadBatchSize</span></td>
+        <td><p>The number of files to load per batch (default is 10).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An enumerator for the coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*"></a>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})">LoadSingleFileRoutine(FileHandle, Action&lt;T&gt;, Action&lt;FileHandle, UnityWebRequest.Result&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads a single file asynchronously.
+Must be implemented by derived classes to handle the loading/parsing of the specific file type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerator LoadSingleFileRoutine(FileHandle handle, Action&lt;T&gt; onLoadingFinished, Action&lt;FileHandle, UnityWebRequest.Result&gt; onError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The file handle representing the file to load.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">onLoadingFinished</span></td>
+        <td><p>Callback invoked with the loaded item upon success.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">UnityWebRequest.Result</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Callback invoked if the file fails to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An enumerator for the coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            MGeUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -29,6 +29,15 @@ references:
   fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+- uid: MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name: ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name.vb: ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched*
   name: ProcessPreBatched
   href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched_
@@ -45,6 +54,15 @@ references:
   fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+- uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Func{``0,IEnumerator},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name: ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Func___0_IEnumerator__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Func{``0,IEnumerator},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name.vb: ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Data.Crypter
   name: Crypter
   href: api/MGeLabs.Utils.Data.Crypter.html
@@ -136,6 +154,168 @@ references:
   commentId: F:MGeLabs.Utils.Data.EStorageLocation.Temporary
   fullName: MGeLabs.Utils.Data.EStorageLocation.Temporary
   nameWithType: EStorageLocation.Temporary
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader
+  name: ExternalAudioLoader
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html
+  commentId: T:MGeLabs.Utils.Data.ExternalAudioLoader
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader
+  nameWithType: ExternalAudioLoader
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType(MGeLabs.Utils.Data.FileHandle)
+  name: GetAudioType(FileHandle)
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_GetAudioType_MGeLabs_Utils_Data_FileHandle_
+  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType(MGeLabs.Utils.Data.FileHandle)
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType(MGeLabs.Utils.Data.FileHandle)
+  nameWithType: ExternalAudioLoader.GetAudioType(FileHandle)
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType*
+  name: GetAudioType
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_GetAudioType_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType
+  nameWithType: ExternalAudioLoader.GetAudioType
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name: LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, UnityWebRequest.Result>)
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_AudioClip__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
+  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, UnityWebRequest.Result))
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<AudioClip>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of AudioClip), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
+  nameWithType: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, UnityWebRequest.Result>)
+  nameWithType.vb: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine*
+  name: LoadSingleFileRoutine
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine
+  nameWithType: ExternalAudioLoader.LoadSingleFileRoutine
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_SupportedExtensions
+  commentId: P:MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions
+  nameWithType: ExternalAudioLoader.SupportedExtensions
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions*
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_SupportedExtensions_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.SupportedExtensions
+  nameWithType: ExternalAudioLoader.SupportedExtensions
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1
+  name: ExternalFileLoaderBase<T>
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html
+  commentId: T:MGeLabs.Utils.Data.ExternalFileLoaderBase`1
+  name.vb: ExternalFileLoaderBase(Of T)
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T)
+  nameWithType: ExternalFileLoaderBase<T>
+  nameWithType.vb: ExternalFileLoaderBase(Of T)
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)
+  name: FindFilesInDirectory(String, EStorageLocation)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_FindFilesInDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation)
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.FindFilesInDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).FindFilesInDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation)
+  nameWithType: ExternalFileLoaderBase<T>.FindFilesInDirectory(String, EStorageLocation)
+  nameWithType.vb: ExternalFileLoaderBase(Of T).FindFilesInDirectory(String, EStorageLocation)
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory*
+  name: FindFilesInDirectory
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_FindFilesInDirectory_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.FindFilesInDirectory
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.FindFilesInDirectory
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).FindFilesInDirectory
+  nameWithType: ExternalFileLoaderBase<T>.FindFilesInDirectory
+  nameWithType.vb: ExternalFileLoaderBase(Of T).FindFilesInDirectory
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)
+  name: LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, UnityWebRequest.Result>, Int32)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__System_Int32_
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result},System.Int32)
+  name.vb: LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, UnityWebRequest.Result), Int32)
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>, System.Int32)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result), System.Int32)
+  nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, UnityWebRequest.Result>, Int32)
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, UnityWebRequest.Result), Int32)
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*
+  name: LoadFromDirectory
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory
+  nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name: LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, UnityWebRequest.Result>)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, UnityWebRequest.Result))
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<T>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of T), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
+  nameWithType: ExternalFileLoaderBase<T>.LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, UnityWebRequest.Result>)
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*
+  name: LoadSingleFileRoutine
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine
+  nameWithType: ExternalFileLoaderBase<T>.LoadSingleFileRoutine
+  nameWithType.vb: ExternalFileLoaderBase(Of T).LoadSingleFileRoutine
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_SupportedExtensions
+  commentId: P:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.SupportedExtensions
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).SupportedExtensions
+  nameWithType: ExternalFileLoaderBase<T>.SupportedExtensions
+  nameWithType.vb: ExternalFileLoaderBase(Of T).SupportedExtensions
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions*
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_SupportedExtensions_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.SupportedExtensions
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.SupportedExtensions
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).SupportedExtensions
+  nameWithType: ExternalFileLoaderBase<T>.SupportedExtensions
+  nameWithType.vb: ExternalFileLoaderBase(Of T).SupportedExtensions
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader
+  name: ExternalTextureLoader
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html
+  commentId: T:MGeLabs.Utils.Data.ExternalTextureLoader
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader
+  nameWithType: ExternalTextureLoader
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name: LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, UnityWebRequest.Result>)
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_Texture2D__Action_MGeLabs_Utils_Data_FileHandle_UnityWebRequest_Result__
+  commentId: M:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,UnityWebRequest.Result})
+  name.vb: LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, UnityWebRequest.Result))
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<Texture2D>, Action<MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of Texture2D), Action(Of MGeLabs.Utils.Data.FileHandle, UnityWebRequest.Result))
+  nameWithType: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, UnityWebRequest.Result>)
+  nameWithType.vb: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, UnityWebRequest.Result))
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine*
+  name: LoadSingleFileRoutine
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine
+  nameWithType: ExternalTextureLoader.LoadSingleFileRoutine
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_SupportedExtensions
+  commentId: P:MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions
+  nameWithType: ExternalTextureLoader.SupportedExtensions
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions*
+  name: SupportedExtensions
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_SupportedExtensions_
+  commentId: Overload:MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.SupportedExtensions
+  nameWithType: ExternalTextureLoader.SupportedExtensions
 - uid: MGeLabs.Utils.Data.FadeTransitions
   name: FadeTransitions
   href: api/MGeLabs.Utils.Data.FadeTransitions.html
@@ -310,6 +490,19 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.FileHandle.FileName
   nameWithType: FileHandle.FileName
+- uid: MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension
+  name: FileNameWithoutExtension
+  href: api/MGeLabs.Utils.Data.FileHandle.html#MGeLabs_Utils_Data_FileHandle_FileNameWithoutExtension
+  commentId: P:MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension
+  fullName: MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension
+  nameWithType: FileHandle.FileNameWithoutExtension
+- uid: MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension*
+  name: FileNameWithoutExtension
+  href: api/MGeLabs.Utils.Data.FileHandle.html#MGeLabs_Utils_Data_FileHandle_FileNameWithoutExtension_
+  commentId: Overload:MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Data.FileHandle.FileNameWithoutExtension
+  nameWithType: FileHandle.FileNameWithoutExtension
 - uid: MGeLabs.Utils.Data.FileHandle.FileSizeBytes
   name: FileSizeBytes()
   href: api/MGeLabs.Utils.Data.FileHandle.html#MGeLabs_Utils_Data_FileHandle_FileSizeBytes
@@ -2081,6 +2274,15 @@ references:
   fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+- uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name: ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_ProcessInBatches__1_List___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
+  name.vb: ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
+  nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Extensions.ListExtension.Random*
   name: Random
   href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Random_

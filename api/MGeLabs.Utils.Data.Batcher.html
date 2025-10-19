@@ -275,6 +275,161 @@ StartCoroutine(Batcher.ProcessInBatches(
   </table>
   
   
+  <a id="MGeLabs_Utils_Data_Batcher_ProcessInBatches_" data-uid="MGeLabs.Utils.Data.Batcher.ProcessInBatches*"></a>
+  <h4 id="MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___" data-uid="MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})">ProcessInBatches&lt;T&gt;(IReadOnlyList&lt;T&gt;, Func&lt;T, IEnumerator&gt;, Int32, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Processes a list of items in batches, where each item is processed using a coroutine (IEnumerator).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ProcessInBatches&lt;T&gt;(IReadOnlyList&lt;T&gt; itemsList, Func&lt;T, IEnumerator&gt; routineOnItem, int itemsPerBatch = 5, float batchDelay = 0.1F, Action&lt;T&gt; onItemProcessStart = null, Action&lt;T, bool&gt; onItemProcessFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchStart = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onFinished = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
+        <td><span class="parametername">itemsList</span></td>
+        <td><p>The list of items to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">IEnumerator</span>&gt;</td>
+        <td><span class="parametername">routineOnItem</span></td>
+        <td><p>The coroutine to execute for each item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsPerBatch</span></td>
+        <td><p>The number of items to process per batch. Defaults to 5.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">batchDelay</span></td>
+        <td><p>The delay (in seconds) between processing batches. Defaults to 0.1f.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">onItemProcessStart</span></td>
+        <td><p>Optional callback invoked before processing each item;
+receives the item as <code>T</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">onItemProcessFinished</span></td>
+        <td><p>Optional callback invoked after processing each item;
+receives the item as <code>T</code> and a <code>bool</code> indicating success.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchStart</span></td>
+        <td><p>Optional callback invoked before processing each batch;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchFinished</span></td>
+        <td><p>Optional callback invoked when a batch is completed;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>Optional callback invoked when all items have been processed;
+receives the full list of processed items as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An enumerator that can be used to execute the batches over time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0____examples">Examples</h5>
+  <pre><code>public class AudioLoaderExample : MonoBehaviour
+{
+    void Start()
+    {
+        List&lt;int> numbers = new List&lt;int> { 1, 2, 3, 4, 5, 6, 7 };
+        StartCoroutine(Batcher.ProcessInBatches(
+            numbers,
+            number => ProcessNumberCoroutine(number),
+            itemsPerBatch: 3,
+            batchDelay: 0.5f,
+            onBatchStart: batch => Debug.Log($&quot;Batch starting: {string.Join(\&quot;, \&quot;, batch)}&quot;),
+            onBatchFinished: batch => Debug.Log($&quot;Batch finished: {string.Join(\&quot;, \&quot;, batch)}&quot;),
+            onFinished: all => Debug.Log(&quot;All items processed&quot;)
+        ));
+    }
+
+    private IEnumerator ProcessNumberCoroutine(int number)
+    {
+        Debug.Log($&quot;Processing {number}&quot;);
+        // Simulate async work
+        yield return null;
+    }
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">routineOnItem</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="MGeLabs_Utils_Data_Batcher_ProcessPreBatched_" data-uid="MGeLabs.Utils.Data.Batcher.ProcessPreBatched*"></a>
   <h4 id="MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Action___0__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__" data-uid="MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Action{``0},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})">ProcessPreBatched&lt;T&gt;(IReadOnlyList&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T&gt;, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T, Exception&gt;)</h4>
   <div class="markdown level1 summary"><p>Executes an action on pre-batched lists of items, with optional callbacks for various stages of processing.</p>
@@ -417,6 +572,130 @@ StartCoroutine(Batcher.ProcessPreBatched(
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
         <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">actionOnItem</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MGeLabs_Utils_Data_Batcher_ProcessPreBatched_" data-uid="MGeLabs.Utils.Data.Batcher.ProcessPreBatched*"></a>
+  <h4 id="MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Func___0_IEnumerator__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___" data-uid="MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Func{``0,IEnumerator},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})">ProcessPreBatched&lt;T&gt;(IReadOnlyList&lt;IReadOnlyList&lt;T&gt;&gt;, Func&lt;T, IEnumerator&gt;, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Processes pre-batched lists of items, where each item is processed using a coroutine (IEnumerator).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ProcessPreBatched&lt;T&gt;(IReadOnlyList&lt;IReadOnlyList&lt;T&gt;&gt; preBatchedLists, Func&lt;T, IEnumerator&gt; routineOnItem, float batchDelay = 0.1F, Action&lt;T&gt; onItemProcessStart = null, Action&lt;T, bool&gt; onItemProcessFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchStart = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onFinished = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">preBatchedLists</span></td>
+        <td><p>The pre-batched lists of items to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T, <span class="xref">IEnumerator</span>&gt;</td>
+        <td><span class="parametername">routineOnItem</span></td>
+        <td><p>The coroutine to execute for each item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">batchDelay</span></td>
+        <td><p>The delay (in seconds) between processing batches. Defaults to 0.1f.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">onItemProcessStart</span></td>
+        <td><p>Optional callback invoked before processing each item;
+receives the item as <code>T</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">onItemProcessFinished</span></td>
+        <td><p>Optional callback invoked after processing each item;
+receives the item as <code>T</code> and a <code>bool</code> indicating success.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchStart</span></td>
+        <td><p>Optional callback invoked before processing each batch;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchFinished</span></td>
+        <td><p>Optional callback invoked when a batch is completed;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>Optional callback invoked when all items have been processed;
+receives the full list of processed items as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An enumerator that can be used to execute the batches over time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the batches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">routineOnItem</code> is null.</p>
 </td>
       </tr>
     </tbody>

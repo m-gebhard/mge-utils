@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Data.Batcher.html",
-          "hash": "HhY+ngFpT8wZBcwMtNcAS5fdzjvuewzEGrPtOJdupXQ="
+          "hash": "E3T+0bkni3z67OlMTZI/Re3oHWpMFw69hEOKmy2CPww="
         }
       },
       "is_incremental": false,
@@ -50,6 +50,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.Data.ExternalAudioLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.Data.ExternalAudioLoader.html",
+          "hash": "dQYe/gMlQqFdJE4+id8mguNTHlLyKppnLHQM+LnngT4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html",
+          "hash": "Yku2Rdf+8y2G3cjy+gWGR8jrioemzUCDReoGTo1VazI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.Data.ExternalTextureLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.Data.ExternalTextureLoader.html",
+          "hash": "of3Cy30OpBiWCQsX0qIK4VIPJb/GWe3hJkAL+nbZVak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.Data.FadeTransitions.yml",
       "output": {
         ".html": {
@@ -66,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Data.FileHandle.html",
-          "hash": "Z+xHi/QiJ4aszR51bVoXTGo727i6udn1ectZenys7qY="
+          "hash": "zngMPbOl5Z2+4VEfSwKIaJV48KBzswPQ1XBHJIXAvXg="
         }
       },
       "is_incremental": false,
@@ -174,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Data.html",
-          "hash": "PZ8/AGDjW+PyYL+i55YZOQabtM7aD9NKVy8kNG4LRck="
+          "hash": "22E4eojVTsDcQa5+hrefFEJuzFmq9UBwESjnVCVHXw8="
         }
       },
       "is_incremental": false,
@@ -414,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Extensions.ListExtension.html",
-          "hash": "jA4QTP9zmmwrHx4eHK+E+QtLisGQAiLGIU9m4OkvGGo="
+          "hash": "tjf0rZYywG+PQqPbFjtBtMOJ0nWRWuN6wUzoPfwk26g="
         }
       },
       "is_incremental": false,
@@ -522,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Extensions.html",
-          "hash": "vnMnvqmiGwkQ+LFmaoqLApgFvjDorVamG9SN2MQlejE="
+          "hash": "g6CAD/GwRS45HSFIdf0bhIXHxVnFqyfxBWmnplHXhqs="
         }
       },
       "is_incremental": false,
@@ -846,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wH3R8TO+jgRRwOm1hbB5sKhNQeRtNeso3JGPz4ipbCs="
+          "hash": "qdS07TvSYCNIZdNJQUJVCN7te28NOclMcQNkGDLN18U="
         }
       },
       "is_incremental": false,
@@ -912,7 +948,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 69,
+          "total_file_count": 72,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
