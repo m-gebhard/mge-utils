@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -18,6 +19,7 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="destination">The target Transform to move towards.</param>
         /// <param name="duration">The duration of the movement in seconds. Defaults to 0.5 seconds.</param>
         /// <param name="useLocal">If true, operates on localPosition instead of world position.</param>
+        /// <param name="onFinished">An optional callback to invoke when the rotation is complete.</param>
         /// <returns>An IEnumerator to be used in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -29,12 +31,14 @@ namespace MGeLabs.Utils.Extensions
             this Transform target,
             Transform destination,
             float duration = 0.5f,
-            bool useLocal = true
+            bool useLocal = true,
+            Action onFinished = null
         )
         {
             Vector3 startPos = useLocal ? target.localPosition : target.position;
             Vector3 endPos = useLocal ? destination.localPosition : destination.position;
             yield return LerpPosition(target, startPos, endPos, duration, useLocal);
+            onFinished?.Invoke();
         }
 
         /// <summary>
@@ -45,6 +49,7 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="endPosition">The target position to move towards.</param>
         /// <param name="duration">The duration of the movement in seconds. Defaults to 0.5 seconds.</param>
         /// <param name="useLocal">If true, operates on localPosition instead of world position.</param>
+        /// <param name="onFinished">An optional callback to invoke when the rotation is complete.</param>
         /// <returns>An IEnumerator to be used in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -55,11 +60,13 @@ namespace MGeLabs.Utils.Extensions
             this Transform target,
             Vector3 endPosition,
             float duration = 0.5f,
-            bool useLocal = true
+            bool useLocal = true,
+            Action onFinished = null
         )
         {
             Vector3 startPos = useLocal ? target.localPosition : target.position;
             yield return LerpPosition(target, startPos, endPosition, duration, useLocal);
+            onFinished?.Invoke();
         }
 
         /// <summary>
@@ -70,6 +77,7 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="destination">The Transform whose rotation to match.</param>
         /// <param name="duration">The duration of the rotation in seconds. Defaults to 0.5 seconds.</param>
         /// <param name="useLocal">If true, operates on localRotation instead of world rotation.</param>
+        /// <param name="onFinished">An optional callback to invoke when the rotation is complete.</param>
         /// <returns>An IEnumerator to be used in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -80,12 +88,14 @@ namespace MGeLabs.Utils.Extensions
             this Transform target,
             Transform destination,
             float duration = 0.5f,
-            bool useLocal = true
+            bool useLocal = true,
+            Action onFinished = null
         )
         {
             Quaternion startRot = useLocal ? target.localRotation : target.rotation;
             Quaternion endRot = useLocal ? destination.localRotation : destination.rotation;
             yield return LerpRotation(target, startRot, endRot, duration, useLocal);
+            onFinished?.Invoke();
         }
 
         /// <summary>
@@ -96,6 +106,7 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="endRot">The target rotation as a Quaternion.</param>
         /// <param name="duration">The duration of the rotation in seconds. Defaults to 0.5 seconds.</param>
         /// <param name="useLocal">If true, operates on localRotation instead of world rotation.</param>
+        /// <param name="onFinished">An optional callback to invoke when the rotation is complete.</param>
         /// <returns>An IEnumerator to be used in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -107,11 +118,13 @@ namespace MGeLabs.Utils.Extensions
             this Transform target,
             Quaternion endRot,
             float duration = 0.5f,
-            bool useLocal = true
+            bool useLocal = true,
+            Action onFinished = null
         )
         {
             Quaternion startRot = useLocal ? target.localRotation : target.rotation;
             yield return LerpRotation(target, startRot, endRot, duration, useLocal);
+            onFinished?.Invoke();
         }
 
         /// <summary>
@@ -122,6 +135,7 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="destination">The target Transform to move towards.</param>
         /// <param name="duration">The duration of the movement in seconds. Defaults to 0.5 seconds.</param>
         /// <param name="useLocal">If true, operates on localPosition/localRotation instead of world position/rotation.</param>
+        /// <param name="onFinished">An optional callback to invoke when the rotation is complete.</param>
         /// <returns>An IEnumerator to be used in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -132,7 +146,8 @@ namespace MGeLabs.Utils.Extensions
             this Transform target,
             Transform destination,
             float duration = 0.5f,
-            bool useLocal = true
+            bool useLocal = true,
+            Action onFinished = null
         )
         {
             Vector3 startPos = useLocal ? target.localPosition : target.position;
@@ -140,6 +155,7 @@ namespace MGeLabs.Utils.Extensions
             Quaternion startRot = useLocal ? target.localRotation : target.rotation;
             Quaternion endRot = useLocal ? destination.localRotation : destination.rotation;
             yield return LerpPositionAndRotation(target, startPos, endPos, startRot, endRot, duration, useLocal);
+            onFinished?.Invoke();
         }
 
         /// <summary>
