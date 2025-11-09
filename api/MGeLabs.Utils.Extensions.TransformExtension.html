@@ -126,14 +126,14 @@
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position and rotation of a target Transform over a specified duration.
 Can optionally move in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator MoveAndRotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveAndRotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true, Action onFinished = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,6 +169,12 @@ Can optionally move in local space.</p>
         <td><p>If true, operates on localPosition/localRotation instead of world position/rotation.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>An optional callback to invoke when the rotation is complete.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -187,20 +193,20 @@ Can optionally move in local space.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(characterTransform.MoveAndRotateToTransform(spawnTransform, 1.2f));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)">MoveToPosition(Transform, Vector3, Single, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)">MoveToPosition(Transform, Vector3, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to a specified position over a given duration.
 Can optionally move in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToPosition(this Transform target, Vector3 endPosition, float duration = 0.5F, bool useLocal = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToPosition(this Transform target, Vector3 endPosition, float duration = 0.5F, bool useLocal = true, Action onFinished = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,6 +242,12 @@ Can optionally move in local space.</p>
         <td><p>If true, operates on localPosition instead of world position.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>An optional callback to invoke when the rotation is complete.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -254,20 +266,20 @@ Can optionally move in local space.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(platformTransform.MoveToPosition(new Vector3(0f, 3f, 0f), 0.8f));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)">MoveToTransform(Transform, Transform, Single, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)">MoveToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position of a target Transform over a specified duration.
 Can optionally move in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true, Action onFinished = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -303,6 +315,12 @@ Can optionally move in local space.</p>
         <td><p>If true, operates on localPosition instead of world position.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>An optional callback to invoke when the rotation is complete.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -321,7 +339,7 @@ Can optionally move in local space.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(enemyTransform.MoveToTransform(playerTransform, 1f, false));
 StartCoroutine(handTransform.MoveToTransform(itemSlotTransform, 0.5f));</code></pre>
 
@@ -523,14 +541,14 @@ if(transform.RaycastDirection(direction, out hit, LayerMask.GetMask(&quot;Defaul
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)">RotateToRotation(Transform, Quaternion, Single, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)">RotateToRotation(Transform, Quaternion, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly rotates a Transform to a specified Quaternion rotation over a given duration.
 Can optionally rotate in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToRotation(this Transform target, Quaternion endRot, float duration = 0.5F, bool useLocal = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToRotation(this Transform target, Quaternion endRot, float duration = 0.5F, bool useLocal = true, Action onFinished = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -566,6 +584,12 @@ Can optionally rotate in local space.</p>
         <td><p>If true, operates on localRotation instead of world rotation.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>An optional callback to invoke when the rotation is complete.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -584,21 +608,21 @@ Can optionally rotate in local space.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(propellerTransform.RotateToRotation(Quaternion.Euler(0f, 0f, 360f), 2f, false));
 StartCoroutine(cameraTransform.RotateToRotation(Quaternion.Euler(15f, 0f, 0f), 1f, true));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)">RotateToTransform(Transform, Transform, Single, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)">RotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly rotates a Transform to match another Transform&apos;s rotation over a specified duration.
 Can optionally rotate in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true, Action onFinished = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -634,6 +658,12 @@ Can optionally rotate in local space.</p>
         <td><p>If true, operates on localRotation instead of world rotation.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>An optional callback to invoke when the rotation is complete.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -652,7 +682,7 @@ Can optionally rotate in local space.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(turretTransform.RotateToTransform(enemyTransform, 0.7f, false));</code></pre>
 
 </article>

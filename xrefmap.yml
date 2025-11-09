@@ -2590,12 +2590,12 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.TransformExtension
   fullName: MGeLabs.Utils.Extensions.TransformExtension
   nameWithType: TransformExtension
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)
-  name: MoveAndRotateToTransform(Transform, Transform, Single, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform, Transform, System.Single, System.Boolean)
-  nameWithType: TransformExtension.MoveAndRotateToTransform(Transform, Transform, Single, Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  name: MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform, Transform, System.Single, System.Boolean, Action)
+  nameWithType: TransformExtension.MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform*
   name: MoveAndRotateToTransform
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_
@@ -2603,12 +2603,12 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform
   nameWithType: TransformExtension.MoveAndRotateToTransform
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)
-  name: MoveToPosition(Transform, Vector3, Single, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform, Vector3, System.Single, System.Boolean)
-  nameWithType: TransformExtension.MoveToPosition(Transform, Vector3, Single, Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)
+  name: MoveToPosition(Transform, Vector3, Single, Boolean, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform, Vector3, System.Single, System.Boolean, Action)
+  nameWithType: TransformExtension.MoveToPosition(Transform, Vector3, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition*
   name: MoveToPosition
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_
@@ -2616,12 +2616,12 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition
   nameWithType: TransformExtension.MoveToPosition
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)
-  name: MoveToTransform(Transform, Transform, Single, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform, Transform, System.Single, System.Boolean)
-  nameWithType: TransformExtension.MoveToTransform(Transform, Transform, Single, Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  name: MoveToTransform(Transform, Transform, Single, Boolean, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform, Transform, System.Single, System.Boolean, Action)
+  nameWithType: TransformExtension.MoveToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform*
   name: MoveToTransform
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_
@@ -2661,12 +2661,12 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RaycastDirection
   nameWithType: TransformExtension.RaycastDirection
-- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)
-  name: RotateToRotation(Transform, Quaternion, Single, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform, Quaternion, System.Single, System.Boolean)
-  nameWithType: TransformExtension.RotateToRotation(Transform, Quaternion, Single, Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)
+  name: RotateToRotation(Transform, Quaternion, Single, Boolean, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform, Quaternion, System.Single, System.Boolean, Action)
+  nameWithType: TransformExtension.RotateToRotation(Transform, Quaternion, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation*
   name: RotateToRotation
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_
@@ -2674,12 +2674,12 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation
   nameWithType: TransformExtension.RotateToRotation
-- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)
-  name: RotateToTransform(Transform, Transform, Single, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform, Transform, System.Single, System.Boolean)
-  nameWithType: TransformExtension.RotateToTransform(Transform, Transform, Single, Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  name: RotateToTransform(Transform, Transform, Single, Boolean, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform, Transform, System.Single, System.Boolean, Action)
+  nameWithType: TransformExtension.RotateToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform*
   name: RotateToTransform
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_
