@@ -42,6 +42,11 @@ namespace MGeLabs.Utils.Editor
         private bool shouldLoopTime = true;
 
         /// <summary>
+        /// Indicates whether to enable looping pose for the animation clips.
+        /// </summary>
+        private bool shouldLoopPose;
+
+        /// <summary>
         /// Indicates whether to enable translation degrees of freedom (DoF) for the animations.
         /// </summary>
         private bool hasTranslationDoF;
@@ -112,6 +117,7 @@ namespace MGeLabs.Utils.Editor
             referenceAvatar =
                 (Avatar)EditorGUILayout.ObjectField("Reference Avatar", referenceAvatar, typeof(Avatar), false);
             animationType = (ModelImporterAnimationType)EditorGUILayout.EnumPopup("Animation Type", animationType);
+
             EditorGUILayout.Space(5);
             shouldRenameClips = EditorGUILayout.ToggleLeft("Rename Clips", shouldRenameClips);
             if (shouldRenameClips)
@@ -122,28 +128,31 @@ namespace MGeLabs.Utils.Editor
                     "{fileName} - Filename, {clipName} - Original Clip Name, {clipIndex} - Clip Index",
                     EditorStyles.miniLabel);
                 EditorGUI.indentLevel--;
-                EditorGUILayout.Space(5);
             }
 
+            EditorGUILayout.Space(5);
             shouldLoopTime = EditorGUILayout.ToggleLeft("Loop Time", shouldLoopTime);
+
+            GUI.enabled = shouldLoopTime;
+            shouldLoopPose = EditorGUILayout.ToggleLeft("Loop Pose", shouldLoopPose);
+            GUI.enabled = true;
+            EditorGUILayout.Space(3);
             hasTranslationDoF = EditorGUILayout.ToggleLeft("Enable Translation DoF", hasTranslationDoF);
 
             EditorGUILayout.Space(10);
-
-            GUILayout.Label("Root Transform Rotation", EditorStyles.boldLabel);
+            GUILayout.Label("Root Transform Rotation", EditorStyles.miniLabel);
             lockRootRotation = EditorGUILayout.ToggleLeft("Bake Into Pose", lockRootRotation);
             keepOriginalOrientation = EditorGUILayout.ToggleLeft("Keep Original Rotation", keepOriginalOrientation);
             EditorGUILayout.Space(5);
-            GUILayout.Label("Root Transform Position (Y)", EditorStyles.boldLabel);
+            GUILayout.Label("Root Transform Position (Y)", EditorStyles.miniLabel);
             lockRootHeightY = EditorGUILayout.ToggleLeft("Bake Into Pose", lockRootHeightY);
             keepOriginalPositionY = EditorGUILayout.ToggleLeft("Keep Original Position Y", keepOriginalPositionY);
             EditorGUILayout.Space(5);
-            GUILayout.Label("Root Transform Position (XZ)", EditorStyles.boldLabel);
+            GUILayout.Label("Root Transform Position (XZ)", EditorStyles.miniLabel);
             lockRootPositionXZ = EditorGUILayout.ToggleLeft("Bake Into Pose", lockRootPositionXZ);
             keepOriginalPositionXZ = EditorGUILayout.ToggleLeft("Keep Original Position XZ", keepOriginalPositionXZ);
 
             EditorGUILayout.Space(10);
-
             if (GUILayout.Button("Apply Settings to Folder"))
             {
                 ApplyToFolder(targetFolder);
@@ -204,6 +213,22 @@ namespace MGeLabs.Utils.Editor
             importer.animationType = animationType;
             importer.sourceAvatar = referenceAvatar;
 
+            if (referenceAvatar)
+            {
+                using (SerializedObject srcAvatarSO = new(referenceAvatar))
+                {
+                    using (SerializedObject importerAvatarSO = new(importer.sourceAvatar))
+                    {
+                        SerializedProperty srcHumanDescription = srcAvatarSO.FindProperty("m_HumanDescription");
+                        if (srcHumanDescription != null)
+                        {
+                            importerAvatarSO.CopyFromSerializedProperty(srcHumanDescription);
+                            importerAvatarSO.ApplyModifiedPropertiesWithoutUndo();
+                        }
+                    }
+                }
+            }
+
             HumanDescription desc = importer.humanDescription;
             desc.hasTranslationDoF = hasTranslationDoF;
             importer.humanDescription = desc;
@@ -225,6 +250,7 @@ namespace MGeLabs.Utils.Editor
                 }
 
                 clip.loopTime = shouldLoopTime;
+                clip.loopPose = shouldLoopPose;
                 clip.keepOriginalOrientation = keepOriginalOrientation;
                 clip.keepOriginalPositionXZ = keepOriginalPositionXZ;
                 clip.keepOriginalPositionY = keepOriginalPositionY;
@@ -234,7 +260,6 @@ namespace MGeLabs.Utils.Editor
             }
 
             importer.clipAnimations = clips;
-
             importer.SaveAndReimport();
         }
     }
