@@ -198,6 +198,16 @@ namespace MGeLabs.Utils.Extensions
                 yield break;
 
             targetVolume ??= audioSource.volume;
+
+            if (transitionDuration <= 0f)
+            {
+                audioSource.clip = clip;
+                audioSource.volume = targetVolume.Value;
+                audioSource.Play();
+                onFinished?.Invoke();
+                yield break;
+            }
+
             float fadeDuration = transitionDuration / 2f;
 
             if (audioSource.isPlaying)
