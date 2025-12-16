@@ -113,6 +113,40 @@ namespace MGeLabs.Utils.Extensions
 
             GUI.DrawTexture(r, image, imageScaleMode, true);
         }
+
+        /// <summary>
+        /// Draws an arrow in the Unity Editor using Gizmos, starting from a given transform's position and forward direction.
+        /// </summary>
+        /// <param name="pointer">The transform from which the arrow starts, using its position and forward direction.</param>
+        /// <param name="arrowLength">The length of the arrow shaft. Defaults to 0.5.</param>
+        /// <param name="arrowHeadLength">The length of the arrowhead. Defaults to 0.12.</param>
+        /// <param name="arrowHeadAngle">The angle of the arrowhead in degrees. Defaults to 20.</param>
+        /// <param name="color">The color of the arrow. Defaults to cyan if not specified.</param>
+        public static void DrawArrow(
+            Transform pointer,
+            float arrowLength = 0.5f,
+            float arrowHeadLength = 0.12f,
+            float arrowHeadAngle = 20f,
+            Color? color = null
+        )
+        {
+            Vector3 start = pointer.position;
+            Vector3 direction = pointer.forward;
+            Vector3 end = start + direction * arrowLength;
+
+            Color previousColor = Gizmos.color;
+            Gizmos.color = color ?? Color.cyan;
+
+            Gizmos.DrawLine(start, end);
+            Vector3 right =
+                Quaternion.LookRotation(direction) * Quaternion.Euler(0, 180 + arrowHeadAngle, 0) * Vector3.forward;
+            Vector3 left =
+                Quaternion.LookRotation(direction) * Quaternion.Euler(0, 180 - arrowHeadAngle, 0) * Vector3.forward;
+            Gizmos.DrawLine(end, end + right * arrowHeadLength);
+            Gizmos.DrawLine(end, end + left * arrowHeadLength);
+
+            Gizmos.color = previousColor;
+        }
     }
 }
 #endif
