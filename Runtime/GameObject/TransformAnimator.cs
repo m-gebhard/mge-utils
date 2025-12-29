@@ -226,6 +226,14 @@ namespace MGeLabs.Utils.GameObjects
         {
             if (rotationConfig.speed <= 0f) return;
 
+            if (rotationConfig.isContinuous)
+            {
+                target.localRotation *= Quaternion.Euler(
+                    rotationConfig.endValue * rotationConfig.speed * Time.deltaTime
+                );
+                return;
+            }
+
             if (rotationDelayTimer > 0f)
             {
                 rotationDelayTimer -= Time.deltaTime;
@@ -361,6 +369,8 @@ namespace MGeLabs.Utils.GameObjects
             public bool canLoop;
             [Tooltip("Delay between loops in seconds.")] [Range(0f, 30f)]
             public float loopDelay;
+            [Tooltip("If true, rotation will be continuous based on end value as rotation speed.")]
+            public bool isContinuous;
             [Space]
             [Tooltip("Starting value of the transform component.")]
             public Vector3 startValue;
