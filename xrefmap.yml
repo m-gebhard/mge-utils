@@ -4197,6 +4197,12 @@ references:
   commentId: F:MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.endValue
   fullName: MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.endValue
   nameWithType: TransformAnimator.TransformAnimatorComponentData.endValue
+- uid: MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isContinuous
+  name: isContinuous
+  href: api/MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#MGeLabs_Utils_GameObjects_TransformAnimator_TransformAnimatorComponentData_isContinuous
+  commentId: F:MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isContinuous
+  fullName: MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isContinuous
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.isContinuous
 - uid: MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isEnabled
   name: isEnabled
   href: api/MGeLabs.Utils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#MGeLabs_Utils_GameObjects_TransformAnimator_TransformAnimatorComponentData_isEnabled
