@@ -3991,6 +3991,32 @@ references:
   commentId: E:MGeLabs.Utils.GameObjects.TransformAnimator.OnScaleTransitionCompletedAction
   fullName: MGeLabs.Utils.GameObjects.TransformAnimator.OnScaleTransitionCompletedAction
   nameWithType: TransformAnimator.OnScaleTransitionCompletedAction
+- uid: MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward
+  name: PlayBackward()
+  href: api/MGeLabs.Utils.GameObjects.TransformAnimator.html#MGeLabs_Utils_GameObjects_TransformAnimator_PlayBackward
+  commentId: M:MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward
+  fullName: MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward()
+  nameWithType: TransformAnimator.PlayBackward()
+- uid: MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward*
+  name: PlayBackward
+  href: api/MGeLabs.Utils.GameObjects.TransformAnimator.html#MGeLabs_Utils_GameObjects_TransformAnimator_PlayBackward_
+  commentId: Overload:MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.TransformAnimator.PlayBackward
+  nameWithType: TransformAnimator.PlayBackward
+- uid: MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward
+  name: PlayForward()
+  href: api/MGeLabs.Utils.GameObjects.TransformAnimator.html#MGeLabs_Utils_GameObjects_TransformAnimator_PlayForward
+  commentId: M:MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward
+  fullName: MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward()
+  nameWithType: TransformAnimator.PlayForward()
+- uid: MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward*
+  name: PlayForward
+  href: api/MGeLabs.Utils.GameObjects.TransformAnimator.html#MGeLabs_Utils_GameObjects_TransformAnimator_PlayForward_
+  commentId: Overload:MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.TransformAnimator.PlayForward
+  nameWithType: TransformAnimator.PlayForward
 - uid: MGeLabs.Utils.GameObjects.TransformAnimator.positionConfig
   name: positionConfig
   href: api/MGeLabs.Utils.GameObjects.TransformAnimator.html#MGeLabs_Utils_GameObjects_TransformAnimator_positionConfig
