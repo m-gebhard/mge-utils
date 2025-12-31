@@ -122,6 +122,26 @@ namespace MGeLabs.Utils.GameObjects
         }
 
         /// <summary>
+        /// Sets the animation direction to forward for position, rotation, and scale.
+        /// </summary>
+        public virtual void PlayForward()
+        {
+            isPositionForward = true;
+            isRotationForward = true;
+            isScaleForward = true;
+        }
+
+        /// <summary>
+        /// Sets the animation direction to backward for position, rotation, and scale.
+        /// </summary>
+        public virtual void PlayBackward()
+        {
+            isPositionForward = false;
+            isRotationForward = false;
+            isScaleForward = false;
+        }
+
+        /// <summary>
         /// Sets the configuration for position animation.
         /// </summary>
         /// <param name="config">The configuration data for position animation.</param>
