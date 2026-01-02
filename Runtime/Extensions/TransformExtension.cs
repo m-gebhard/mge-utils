@@ -9,7 +9,7 @@ namespace MGeLabs.Utils.Extensions
     /// </summary>
     public static class TransformExtension
     {
-        #region Movement & Rotation
+        #region Movement, Rotation, Scale
 
         /// <summary>
         /// Smoothly moves a Transform to match the position of a target Transform over a specified duration.
@@ -159,6 +159,31 @@ namespace MGeLabs.Utils.Extensions
         }
 
         /// <summary>
+        /// Smoothly scales a Transform to a target scale over a specified duration.
+        /// </summary>
+        /// <param name="target">The Transform to scale.</param>
+        /// <param name="endScale">The target local scale.</param>
+        /// <param name="duration">Duration of the scaling animation.</param>
+        /// <param name="onFinished">Optional callback when scaling completes.</param>
+        /// <returns>An IEnumerator for coroutine use.</returns>
+        /// <example>
+        /// <code>
+        /// StartCoroutine(transform.ScaleTo(new Vector3(2f, 1f, 1f), 0.3f));
+        /// </code>
+        /// </example>
+        public static IEnumerator ScaleTo(
+            this Transform target,
+            Vector3 endScale,
+            float duration = 0.5f,
+            Action onFinished = null
+        )
+        {
+            Vector3 startScale = target.localScale;
+            yield return LerpScale(target, startScale, endScale, duration);
+            onFinished?.Invoke();
+        }
+
+        /// <summary>
         /// Smoothly interpolates the position of a Transform from start to end over a duration.
         /// Can operate in local or world space.
         /// </summary>
@@ -269,6 +294,34 @@ namespace MGeLabs.Utils.Extensions
                 target.position = endPos;
                 target.rotation = endRot;
             }
+        }
+
+        /// <summary>
+        /// Smoothly interpolates the scale of a Transform from a starting scale to an ending scale over a specified duration.
+        /// </summary>
+        /// <param name="target">The Transform whose scale will be interpolated.</param>
+        /// <param name="start">The starting scale as a Vector3.</param>
+        /// <param name="end">The target scale as a Vector3.</param>
+        /// <param name="duration">The duration of the scaling animation in seconds.</param>
+        /// <returns>An IEnumerator to be used in a coroutine.</returns>
+        private static IEnumerator LerpScale(
+            Transform target,
+            Vector3 start,
+            Vector3 end,
+            float duration
+        )
+        {
+            float elapsed = 0f;
+
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+                float t = Mathf.SmoothStep(0f, 1f, elapsed / duration);
+                target.localScale = Vector3.Lerp(start, end, t);
+                yield return null;
+            }
+
+            target.localScale = end;
         }
 
         #endregion
