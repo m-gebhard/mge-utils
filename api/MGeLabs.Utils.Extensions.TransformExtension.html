@@ -685,6 +685,72 @@ Can optionally rotate in local space.</p>
   <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(turretTransform.RotateToTransform(enemyTransform, 0.7f, false));</code></pre>
 
+  
+  
+  <a id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.ScaleTo*"></a>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)">ScaleTo(Transform, Vector3, Single, Action)</h4>
+  <div class="markdown level1 summary"><p>Smoothly scales a Transform to a target scale over a specified duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ScaleTo(this Transform target, Vector3 endScale, float duration = 0.5F, Action onFinished = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The Transform to scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">endScale</span></td>
+        <td><p>The target local scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Duration of the scaling animation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>Optional callback when scaling completes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An IEnumerator for coroutine use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action__examples">Examples</h5>
+  <pre><code>StartCoroutine(transform.ScaleTo(new Vector3(2f, 1f, 1f), 0.3f));</code></pre>
+
 </article>
           </div>
           

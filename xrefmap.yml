@@ -2687,6 +2687,19 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform
   nameWithType: TransformExtension.RotateToTransform
+- uid: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)
+  name: ScaleTo(Transform, Vector3, Single, Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform, Vector3, System.Single, Action)
+  nameWithType: TransformExtension.ScaleTo(Transform, Vector3, Single, Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo*
+  name: ScaleTo
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_
+  commentId: Overload:MGeLabs.Utils.Extensions.TransformExtension.ScaleTo
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo
+  nameWithType: TransformExtension.ScaleTo
 - uid: MGeLabs.Utils.Extensions.Vector3Extension
   name: Vector3Extension
   href: api/MGeLabs.Utils.Extensions.Vector3Extension.html
@@ -4272,6 +4285,49 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.GameObjects.TransformAnimator.Update
   nameWithType: TransformAnimator.Update
+- uid: MGeLabs.Utils.GameObjects.TransformFollower
+  name: TransformFollower
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html
+  commentId: T:MGeLabs.Utils.GameObjects.TransformFollower
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower
+  nameWithType: TransformFollower
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.followRotation
+  name: followRotation
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_followRotation
+  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.followRotation
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.followRotation
+  nameWithType: TransformFollower.followRotation
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
+  name: LateUpdate()
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate
+  commentId: M:MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate()
+  nameWithType: TransformFollower.LateUpdate()
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate*
+  name: LateUpdate
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate_
+  commentId: Overload:MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
+  nameWithType: TransformFollower.LateUpdate
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
+  name: positionOffset
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_positionOffset
+  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
+  nameWithType: TransformFollower.positionOffset
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
+  name: smoothTime
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_smoothTime
+  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
+  nameWithType: TransformFollower.smoothTime
+- uid: MGeLabs.Utils.GameObjects.TransformFollower.target
+  name: target
+  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_target
+  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.target
+  fullName: MGeLabs.Utils.GameObjects.TransformFollower.target
+  nameWithType: TransformFollower.target
 - uid: MGeLabs.Utils.Reflection
   name: MGeLabs.Utils.Reflection
   href: api/MGeLabs.Utils.Reflection.html

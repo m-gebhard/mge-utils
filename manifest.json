@@ -534,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Extensions.TransformExtension.html",
-          "hash": "1F4AEmORGYQ7y6q4hS3zCl6PlAylF1piIZpa5+vmLDk="
+          "hash": "NJ06HtlG5BIFocynG+m5bkY9E2QiHba1wZ5Iv9LcANM="
         }
       },
       "is_incremental": false,
@@ -818,11 +818,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.html",
+          "hash": "4AStjKwcd4w+8abM0qxCJxso1P7hcA7TdmpJr/tBnzs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.GameObjects.yml",
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.GameObjects.html",
-          "hash": "UzAzXfcqzuZwgKAS63QChsZq629hJJE7sUuQn/vammI="
+          "hash": "xfD4tCElh4GYvr0RkVTTDyxKJXS3jSHz527EtJcQK0I="
         }
       },
       "is_incremental": false,
@@ -882,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qdS07TvSYCNIZdNJQUJVCN7te28NOclMcQNkGDLN18U="
+          "hash": "dUyd2ZF7y44h2h3jg0QujstNwD3b4HL9nfXAhMg/J30="
         }
       },
       "is_incremental": false,
@@ -948,7 +960,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 72,
+          "total_file_count": 73,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
