@@ -722,6 +722,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.GameObjects.DestroyAfterTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html",
+          "hash": "D3GtB3KAae5AmpdQTVk3RLwcYoJ4ctLblyCjLnPmLME="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.GameObjects.EphemeralSingleton-1.yml",
       "output": {
         ".html": {
@@ -818,23 +830,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.html",
-          "hash": "4AStjKwcd4w+8abM0qxCJxso1P7hcA7TdmpJr/tBnzs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.GameObjects.yml",
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.GameObjects.html",
-          "hash": "xfD4tCElh4GYvr0RkVTTDyxKJXS3jSHz527EtJcQK0I="
+          "hash": "11oOAwVFvfikwzekVlpq0LF6K/+yAhw9fuDlO4a0BwM="
         }
       },
       "is_incremental": false,
@@ -894,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dUyd2ZF7y44h2h3jg0QujstNwD3b4HL9nfXAhMg/J30="
+          "hash": "/aNOTqjRrX3kTs0KOAgYU5L7HWrlzrJGhvsiNzMrlNM="
         }
       },
       "is_incremental": false,

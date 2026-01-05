@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TransformFollower
+    <title>Class DestroyAfterTime
    | MGeUtils Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TransformFollower
+    <meta name="title" content="Class DestroyAfterTime
    | MGeUtils Documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,34 +78,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MGeLabs.Utils.GameObjects.TransformFollower">
+            <article class="content wrap" id="_content" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime">
   
   
-  <h1 id="MGeLabs_Utils_GameObjects_TransformFollower" data-uid="MGeLabs.Utils.GameObjects.TransformFollower" class="text-break">Class TransformFollower
+  <h1 id="MGeLabs_Utils_GameObjects_DestroyAfterTime" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime" class="text-break">Class DestroyAfterTime
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A utility class that destroys or disables the GameObject after a specified lifetime.
+Triggers UnityEvent and Action callbacks before destruction.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TransformFollower</span></div>
+    <div class="level1"><span class="xref">DestroyAfterTime</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MGeLabs.Utils.GameObjects.html">MGeLabs.Utils.GameObjects</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="MGeLabs_Utils_GameObjects_TransformFollower_syntax">Syntax</h5>
+  <h5 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransformFollower : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class DestroyAfterTime : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="MGeLabs_Utils_GameObjects_TransformFollower_followRotation" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.followRotation">followRotation</h4>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_disableOnly" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.disableOnly">disableOnly</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected bool followRotation</code></pre>
+    <pre><code class="lang-csharp hljs">protected bool disableOnly</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,36 +126,12 @@
   </table>
   
   
-  <h4 id="MGeLabs_Utils_GameObjects_TransformFollower_positionOffset" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.positionOffset">positionOffset</h4>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_lifetime" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.lifetime">lifetime</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Vector3 positionOffset</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="MGeLabs_Utils_GameObjects_TransformFollower_smoothTime" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.smoothTime">smoothTime</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected float smoothTime</code></pre>
+    <pre><code class="lang-csharp hljs">protected float lifetime</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,12 +150,13 @@
   </table>
   
   
-  <h4 id="MGeLabs_Utils_GameObjects_TransformFollower_target" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.target">target</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDestroy" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroy">OnDestroy</h4>
+  <div class="markdown level1 summary"><p>UnityEvent invoked before the GameObject is destroyed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform target</code></pre>
+    <pre><code class="lang-csharp hljs">public UnityEvent OnDestroy</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,7 +168,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Transform</span></td>
+        <td><span class="xref">UnityEvent</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -198,14 +177,65 @@
   </h3>
   
   
-  <a id="MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate_" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate*"></a>
-  <h4 id="MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate" data-uid="MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate">LateUpdate()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="MGeLabs_Utils_GameObjects_DestroyAfterTime_DestroySelf_" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf*"></a>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_DestroySelf" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf">DestroySelf()</h4>
+  <div class="markdown level1 summary"><p>Invokes the destruction callbacks and destroys or disables the GameObject.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void LateUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void DestroySelf()</code></pre>
   </div>
+  
+  
+  <a id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDisable_" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable*"></a>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDisable" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"><p>Called when the GameObject is disabled. Cancels the scheduled destruction
+of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnEnable_" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable*"></a>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnEnable" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"><p>Called when the GameObject is enabled. Schedules the destruction of the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDestroyAction" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroyAction">OnDestroyAction</h4>
+  <div class="markdown level1 summary"><p>Action event invoked before the GameObject is destroyed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnDestroyAction</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

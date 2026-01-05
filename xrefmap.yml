@@ -3412,6 +3412,75 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.GameObjects.ColliderEventHandler.UnregisterColliderEvent
   nameWithType: ColliderEventHandler.UnregisterColliderEvent
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime
+  name: DestroyAfterTime
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html
+  commentId: T:MGeLabs.Utils.GameObjects.DestroyAfterTime
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime
+  nameWithType: DestroyAfterTime
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf
+  name: DestroySelf()
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_DestroySelf
+  commentId: M:MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf()
+  nameWithType: DestroyAfterTime.DestroySelf()
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf*
+  name: DestroySelf
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_DestroySelf_
+  commentId: Overload:MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.DestroySelf
+  nameWithType: DestroyAfterTime.DestroySelf
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.disableOnly
+  name: disableOnly
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_disableOnly
+  commentId: F:MGeLabs.Utils.GameObjects.DestroyAfterTime.disableOnly
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.disableOnly
+  nameWithType: DestroyAfterTime.disableOnly
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.lifetime
+  name: lifetime
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_lifetime
+  commentId: F:MGeLabs.Utils.GameObjects.DestroyAfterTime.lifetime
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.lifetime
+  nameWithType: DestroyAfterTime.lifetime
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroy
+  name: OnDestroy
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDestroy
+  commentId: F:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroy
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroy
+  nameWithType: DestroyAfterTime.OnDestroy
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroyAction
+  name: OnDestroyAction
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDestroyAction
+  commentId: E:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroyAction
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDestroyAction
+  nameWithType: DestroyAfterTime.OnDestroyAction
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable
+  name: OnDisable()
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDisable
+  commentId: M:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable()
+  nameWithType: DestroyAfterTime.OnDisable()
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable*
+  name: OnDisable
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnDisable_
+  commentId: Overload:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnDisable
+  nameWithType: DestroyAfterTime.OnDisable
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable
+  name: OnEnable()
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnEnable
+  commentId: M:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable()
+  nameWithType: DestroyAfterTime.OnEnable()
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable*
+  name: OnEnable
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_OnEnable_
+  commentId: Overload:MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable
+  nameWithType: DestroyAfterTime.OnEnable
 - uid: MGeLabs.Utils.GameObjects.EphemeralSingleton`1
   name: EphemeralSingleton<T>
   href: api/MGeLabs.Utils.GameObjects.EphemeralSingleton-1.html
@@ -4285,49 +4354,6 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.GameObjects.TransformAnimator.Update
   nameWithType: TransformAnimator.Update
-- uid: MGeLabs.Utils.GameObjects.TransformFollower
-  name: TransformFollower
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html
-  commentId: T:MGeLabs.Utils.GameObjects.TransformFollower
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower
-  nameWithType: TransformFollower
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.followRotation
-  name: followRotation
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_followRotation
-  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.followRotation
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.followRotation
-  nameWithType: TransformFollower.followRotation
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
-  name: LateUpdate()
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate
-  commentId: M:MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate()
-  nameWithType: TransformFollower.LateUpdate()
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate*
-  name: LateUpdate
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_LateUpdate_
-  commentId: Overload:MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
-  isSpec: "True"
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.LateUpdate
-  nameWithType: TransformFollower.LateUpdate
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
-  name: positionOffset
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_positionOffset
-  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.positionOffset
-  nameWithType: TransformFollower.positionOffset
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
-  name: smoothTime
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_smoothTime
-  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.smoothTime
-  nameWithType: TransformFollower.smoothTime
-- uid: MGeLabs.Utils.GameObjects.TransformFollower.target
-  name: target
-  href: api/MGeLabs.Utils.GameObjects.TransformFollower.html#MGeLabs_Utils_GameObjects_TransformFollower_target
-  commentId: F:MGeLabs.Utils.GameObjects.TransformFollower.target
-  fullName: MGeLabs.Utils.GameObjects.TransformFollower.target
-  nameWithType: TransformFollower.target
 - uid: MGeLabs.Utils.Reflection
   name: MGeLabs.Utils.Reflection
   href: api/MGeLabs.Utils.Reflection.html
