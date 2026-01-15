@@ -125,6 +125,69 @@
   </h3>
   
   
+  <a id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy*"></a>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,Func{Transform,System.Boolean},System.Boolean)">FindInHierarchy(Transform, Func&lt;Transform, Boolean&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds all Transforms in the hierarchy of the given root Transform that match the specified filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform[] FindInHierarchy(this Transform rootTransform, Func&lt;Transform, bool&gt; filter, bool includeInactive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">rootTransform</span></td>
+        <td><p>The root Transform to search within.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Transform</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>A function that defines the condition each Transform must satisfy to be included in the results.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInactive</span></td>
+        <td><p>If true, includes inactive Transforms in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span>[]</td>
+        <td><p>An array of Transforms that match the filter condition. Returns an empty array if no matches are found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean__examples">Examples</h5>
+  <pre><code>// Find all transforms whose name contains &quot;Hand&quot;.
+Transform[] hands = rootTransform.FindInHierarchy(
+    t => t.name.Contains(&quot;Hand&quot;)
+);</code></pre>
+
+  
+  
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform*"></a>
   <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position and rotation of a target Transform over a specified duration.
