@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MGeLabs.Utils.Extensions
@@ -452,6 +453,45 @@ namespace MGeLabs.Utils.Extensions
             }
 
             return isHit;
+        }
+
+        #endregion
+
+        #region Misc
+
+        /// <summary>
+        /// Finds all Transforms in the hierarchy of the given root Transform that match the specified filter.
+        /// </summary>
+        /// <param name="rootTransform">The root Transform to search within.</param>
+        /// <param name="filter">A function that defines the condition each Transform must satisfy to be included in the results.</param>
+        /// <param name="includeInactive">If true, includes inactive Transforms in the search.</param>
+        /// <returns>An array of Transforms that match the filter condition. Returns an empty array if no matches are found.</returns>
+        /// <example>
+        /// <code>
+        /// // Find all transforms whose name contains "Hand".
+        /// Transform[] hands = rootTransform.FindInHierarchy(
+        ///     t => t.name.Contains("Hand")
+        /// );
+        /// </code>
+        /// </example>
+        public static Transform[] FindInHierarchy(
+            this Transform rootTransform,
+            Func<Transform, bool> filter,
+            bool includeInactive = false
+        )
+        {
+            Transform[] all = rootTransform.GetComponentsInChildren<Transform>(includeInactive);
+            List<Transform> results = new List<Transform>(all.Length);
+
+            for (int i = 0; i < all.Length; i++)
+            {
+                Transform t = all[i];
+                if (filter(t)) results.Add(t);
+            }
+
+            return results.Count == 0
+                ? Array.Empty<Transform>()
+                : results.ToArray();
         }
 
         #endregion
