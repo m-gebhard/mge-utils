@@ -184,7 +184,7 @@ Triggers UnityEvent and Action callbacks before destruction.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void DestroySelf()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void DestroySelf()</code></pre>
   </div>
   
   
@@ -209,6 +209,36 @@ of the GameObject.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
   </div>
+  
+  
+  <a id="MGeLabs_Utils_GameObjects_DestroyAfterTime_SetLifetime_" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime*"></a>
+  <h4 id="MGeLabs_Utils_GameObjects_DestroyAfterTime_SetLifetime_System_Single_" data-uid="MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime(System.Single)">SetLifetime(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the lifetime used for scheduled destruction and, if this component is enabled,
+reschedules the pending destruction with the new lifetime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLifetime(float newLifetime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">newLifetime</span></td>
+        <td><p>New lifetime in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="events">Events
   </h3>
   

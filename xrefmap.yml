@@ -3497,6 +3497,19 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.OnEnable
   nameWithType: DestroyAfterTime.OnEnable
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime(System.Single)
+  name: SetLifetime(Single)
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_SetLifetime_System_Single_
+  commentId: M:MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime(System.Single)
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime(System.Single)
+  nameWithType: DestroyAfterTime.SetLifetime(Single)
+- uid: MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime*
+  name: SetLifetime
+  href: api/MGeLabs.Utils.GameObjects.DestroyAfterTime.html#MGeLabs_Utils_GameObjects_DestroyAfterTime_SetLifetime_
+  commentId: Overload:MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime
+  isSpec: "True"
+  fullName: MGeLabs.Utils.GameObjects.DestroyAfterTime.SetLifetime
+  nameWithType: DestroyAfterTime.SetLifetime
 - uid: MGeLabs.Utils.GameObjects.EphemeralSingleton`1
   name: EphemeralSingleton<T>
   href: api/MGeLabs.Utils.GameObjects.EphemeralSingleton-1.html
