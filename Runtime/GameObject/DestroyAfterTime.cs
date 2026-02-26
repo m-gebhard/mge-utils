@@ -45,13 +45,29 @@ namespace MGeLabs.Utils.GameObjects
         /// <summary>
         /// Invokes the destruction callbacks and destroys or disables the GameObject.
         /// </summary>
-        protected virtual void DestroySelf()
+        public virtual void DestroySelf()
         {
             OnDestroy?.Invoke();
             OnDestroyAction?.Invoke();
 
             if (disableOnly) gameObject.SetActive(false);
             else Destroy(gameObject);
+        }
+
+        /// <summary>
+        /// Sets the lifetime used for scheduled destruction and, if this component is enabled,
+        /// reschedules the pending destruction with the new lifetime.
+        /// </summary>
+        /// <param name="newLifetime">New lifetime in seconds.</param>
+        public virtual void SetLifetime(float newLifetime)
+        {
+            lifetime = Math.Max(0f, newLifetime);
+
+            if (enabled)
+            {
+                CancelInvoke(nameof(DestroySelf));
+                Invoke(nameof(DestroySelf), lifetime);
+            }
         }
     }
 }
