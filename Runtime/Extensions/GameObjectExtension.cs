@@ -44,7 +44,7 @@ namespace MGeLabs.Utils.Extensions
         /// If <c>true</c>, will include inactive children; otherwise only active ones.
         /// </param>
         /// <returns>
-        /// A <see cref="Dictionary{GameObject, LayerMask}"/> mapping each affected GameObject
+        /// A <see cref="System.Collections.Generic.Dictionary{TKey,TValue}"/> mapping each affected GameObject
         /// to its original <see cref="UnityEngine.GameObject.layer"/> (as a <see cref="UnityEngine.LayerMask"/>).
         /// </returns>
         public static Dictionary<GameObject, LayerMask> SetLayersRecursively(

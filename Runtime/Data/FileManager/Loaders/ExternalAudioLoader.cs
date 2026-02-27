@@ -52,7 +52,7 @@ namespace MGeLabs.Utils.Data
         /// Determines the audio type based on the file extension.
         /// </summary>
         /// <param name="fileHandle">The file handle representing the audio file.</param>
-        /// <returns>The corresponding <see cref="AudioType"/>.</returns>
+        /// <returns>The corresponding <see cref="UnityEngine.AudioType"/>.</returns>
         protected virtual AudioType GetAudioType(FileHandle fileHandle) => fileHandle switch
         {
             { Extension: ".mp3" } => AudioType.MPEG,
