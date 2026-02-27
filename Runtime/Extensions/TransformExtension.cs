@@ -378,13 +378,15 @@ namespace MGeLabs.Utils.Extensions
         }
 
         /// <summary>
-        /// Performs a raycast from the Transform's position in a specified direction, with optional offsets and settings.
+        /// Performs a raycast in local space relative to the Transform.
         /// </summary>
+        /// <remarks>
+        /// Direction and origin offset are transformed into world space internally.</remarks>
         /// <param name="transform">The Transform from which the raycast originates.</param>
-        /// <param name="direction">The direction in which to raycast.</param>
+        /// <param name="localDirection">Direction in local space (e.g. Vector3.up, Vector3.forward).</param>
         /// <param name="hit">The RaycastHit object that will store information about the hit.</param>
         /// <param name="includedLayers">The layers to include in the raycast.</param>
-        /// <param name="localRayOffset">An optional offset applied to the ray's origin.</param>
+        /// <param name="localRayOffset">Optional local space offset applied to the ray's origin.</param>
         /// <param name="maxDistance">The maximum distance for the raycast. Defaults to float.MaxValue.</param>
         /// <param name="queryTriggerInteraction">Specifies whether the raycast should interact with trigger colliders.</param>
         /// <param name="drawRay">Whether to draw the ray in the scene for debugging purposes.</param>
@@ -392,16 +394,19 @@ namespace MGeLabs.Utils.Extensions
         /// <example>
         /// <code>
         /// RaycastHit hit;
-        /// Vector3 direction = transform.up;
-        /// if(transform.RaycastDirection(direction, out hit, LayerMask.GetMask("Default"), maxDistance: 10f))
+        /// if (transform.RaycastDirection(
+        ///     Vector3.up,
+        ///     out hit,
+        ///     LayerMask.GetMask("Default"),
+        ///     maxDistance: 10f))
         /// {
-        ///     Debug.Log("Hit object in up direction: " + hit.collider.name);
+        ///     Debug.Log("Hit object above transform: " + hit.collider.name);
         /// }
         /// </code>
         /// </example>
         public static bool RaycastDirection(
             this Transform transform,
-            Vector3 direction,
+            Vector3 localDirection,
             out RaycastHit hit,
             LayerMask includedLayers,
             Vector3 localRayOffset = default,
@@ -410,11 +415,12 @@ namespace MGeLabs.Utils.Extensions
             bool drawRay = false
         )
         {
-            Vector3 origin = transform.position + localRayOffset;
+            Vector3 origin = transform.TransformPoint(localRayOffset);
+            Vector3 direction = transform.TransformDirection(localDirection).normalized;
 
             return DoRaycast(
                 origin,
-                direction.normalized,
+                direction,
                 out hit,
                 includedLayers,
                 maxDistance,
