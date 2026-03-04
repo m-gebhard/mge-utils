@@ -2754,6 +2754,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.Vector3Extension.Divide
   nameWithType: Vector3Extension.Divide
+- uid: MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow(Vector3,System.String,System.Nullable{Color},System.Single,System.Single,System.Int32,System.Boolean)
+  name: DrawGizmosDownArrow(Vector3, String, Nullable<Color>, Single, Single, Int32, Boolean)
+  href: api/MGeLabs.Utils.Extensions.Vector3Extension.html#MGeLabs_Utils_Extensions_Vector3Extension_DrawGizmosDownArrow_Vector3_System_String_System_Nullable_Color__System_Single_System_Single_System_Int32_System_Boolean_
+  commentId: M:MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow(Vector3,System.String,System.Nullable{Color},System.Single,System.Single,System.Int32,System.Boolean)
+  name.vb: DrawGizmosDownArrow(Vector3, String, Nullable(Of Color), Single, Single, Int32, Boolean)
+  fullName: MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow(Vector3, System.String, System.Nullable<Color>, System.Single, System.Single, System.Int32, System.Boolean)
+  fullName.vb: MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow(Vector3, System.String, System.Nullable(Of Color), System.Single, System.Single, System.Int32, System.Boolean)
+  nameWithType: Vector3Extension.DrawGizmosDownArrow(Vector3, String, Nullable<Color>, Single, Single, Int32, Boolean)
+  nameWithType.vb: Vector3Extension.DrawGizmosDownArrow(Vector3, String, Nullable(Of Color), Single, Single, Int32, Boolean)
+- uid: MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow*
+  name: DrawGizmosDownArrow
+  href: api/MGeLabs.Utils.Extensions.Vector3Extension.html#MGeLabs_Utils_Extensions_Vector3Extension_DrawGizmosDownArrow_
+  commentId: Overload:MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow
+  nameWithType: Vector3Extension.DrawGizmosDownArrow
 - uid: MGeLabs.Utils.Extensions.Vector3Extension.Multiply(Vector3,System.Single)
   name: Multiply(Vector3, Single)
   href: api/MGeLabs.Utils.Extensions.Vector3Extension.html#MGeLabs_Utils_Extensions_Vector3Extension_Multiply_Vector3_System_Single_

@@ -292,6 +292,71 @@ Vector3 result = a.Divide(b);  // Result: (5, 20, 6) — y unchanged because div
 
   
   
+  <a id="MGeLabs_Utils_Extensions_Vector3Extension_DrawGizmosDownArrow_" data-uid="MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow*"></a>
+  <h4 id="MGeLabs_Utils_Extensions_Vector3Extension_DrawGizmosDownArrow_Vector3_System_String_System_Nullable_Color__System_Single_System_Single_System_Int32_System_Boolean_" data-uid="MGeLabs.Utils.Extensions.Vector3Extension.DrawGizmosDownArrow(Vector3,System.String,System.Nullable{Color},System.Single,System.Single,System.Int32,System.Boolean)">DrawGizmosDownArrow(Vector3, String, Nullable&lt;Color&gt;, Single, Single, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Draws a downward-pointing gizmo arrow at the given world position (Editor only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawGizmosDownArrow(this Vector3 position, string label = &quot;&quot;, Color? color = null, float length = 10F, float angle = 20F, int fontSize = 16, bool drawAdditionalDisk = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>World-space position where the arrow tip is placed (arrow points down to this position).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>Optional label text shown above the arrow start. Empty string to omit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td><p>Optional color for the arrow and label. If null, defaults to <see cref="!:Color.green"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Distance from the arrow start (top) down to the tip (position).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>Angle (degrees) used to form the arrowhead relative to the shaft.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td><p>Font size for the optional label.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">drawAdditionalDisk</span></td>
+        <td><p>Whether to draw an additional wire disc at the arrow tip for better visibility.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="MGeLabs_Utils_Extensions_Vector3Extension_Multiply_" data-uid="MGeLabs.Utils.Extensions.Vector3Extension.Multiply*"></a>
   <h4 id="MGeLabs_Utils_Extensions_Vector3Extension_Multiply_Vector3_System_Single_" data-uid="MGeLabs.Utils.Extensions.Vector3Extension.Multiply(Vector3,System.Single)">Multiply(Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Multiplies each component of the vector by a scalar value.</p>
