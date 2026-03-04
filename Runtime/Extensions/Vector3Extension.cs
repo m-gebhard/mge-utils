@@ -1,4 +1,7 @@
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace MGeLabs.Utils.Extensions
 {
@@ -125,6 +128,57 @@ namespace MGeLabs.Utils.Extensions
         public static float DistanceTo(this Vector3 vector, Vector3 other)
         {
             return Vector3.Distance(vector, other);
+        }
+
+        /// <summary>
+        /// Draws a downward-pointing gizmo arrow at the given world position (Editor only).
+        /// </summary>
+        /// <param name="position">World-space position where the arrow tip is placed (arrow points down to this position).</param>
+        /// <param name="label">Optional label text shown above the arrow start. Empty string to omit.</param>
+        /// <param name="color">Optional color for the arrow and label. If null, defaults to <see cref="Color.green"/>.</param>
+        /// <param name="length">Distance from the arrow start (top) down to the tip (position).</param>
+        /// <param name="angle">Angle (degrees) used to form the arrowhead relative to the shaft.</param>
+        /// <param name="fontSize">Font size for the optional label.</param>
+        /// <param name="drawAdditionalDisk">Whether to draw an additional wire disc at the arrow tip for better visibility.</param>
+        public static void DrawGizmosDownArrow(
+            this Vector3 position,
+            string label = "",
+            Color? color = null,
+            float length = 10f,
+            float angle = 20f,
+            int fontSize = 16,
+            bool drawAdditionalDisk = false)
+        {
+#if UNITY_EDITOR
+            float headLength = Mathf.Clamp(HandleUtility.GetHandleSize(position), 0.25f, 2f);
+
+            Vector3 dir = Vector3.down;
+            Vector3 start = position + Vector3.up * length;
+            Vector3 end = position;
+
+            Gizmos.color = color ?? Color.green;
+
+            Gizmos.DrawLine(start, end);
+            Vector3 right = Quaternion.AngleAxis(angle, Vector3.forward) * -dir;
+            Vector3 left = Quaternion.AngleAxis(-angle, Vector3.forward) * -dir;
+
+            Gizmos.DrawLine(end, end + right * headLength);
+            Gizmos.DrawLine(end, end + left * headLength);
+
+            if (drawAdditionalDisk)
+            {
+                Handles.color = color ?? Color.green;
+                Handles.DrawWireDisc(position, Vector3.up, headLength * 0.5f);
+            }
+
+            if (!string.IsNullOrEmpty(label))
+            {
+                GUIStyle style = new(EditorStyles.boldLabel);
+                style.normal.textColor = Gizmos.color;
+                style.fontSize = fontSize;
+                Handles.Label(start + Vector3.up * 0.1f, label, style);
+            }
+#endif
         }
     }
 }
