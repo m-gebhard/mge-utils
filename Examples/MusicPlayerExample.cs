@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using MGeLabs.Utils.Editor;
 using MGeLabs.Utils.Extensions;
 using MGeLabs.Utils.GameObjects;
+#if UNITY_EDITOR
+using UnityEditor;
+using MGeLabs.Utils.Editor;
+#endif
 
 namespace MGeLabs.Utils.Examples
 {

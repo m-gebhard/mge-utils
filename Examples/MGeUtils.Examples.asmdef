@@ -1,7 +1,10 @@
 {
-    "name": "MGeUtils",
+    "name": "MGeUtils.Examples",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:52e905c0b605f36499533b8398d29677",
+        "GUID:ca4186558d0e1264fa58c5cb71a61aec"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

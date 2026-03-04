@@ -1,9 +1,9 @@
+#if UNITY_EDITOR
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using MGeLabs.Utils.GameObjects;
 
-#if UNITY_EDITOR
 namespace MGeLabs.Utils.Editor
 {
     public class PersistentObjectChecker : EditorWindow
