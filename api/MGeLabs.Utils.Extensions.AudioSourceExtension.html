@@ -126,7 +126,7 @@
   
   
   <a id="MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},Action)">FadeVolume(AudioSource, Single, Single, Nullable&lt;Single&gt;, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__System_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},System.Action)">FadeVolume(AudioSource, Single, Single, Nullable&lt;Single&gt;, Action)</h4>
   <div class="markdown level1 summary"><p>Fades the volume of the given AudioSource from a start volume to a target volume over a specified duration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -169,7 +169,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the fade is complete.</p>
 </td>
@@ -186,13 +186,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span></td>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
         <td><p>An IEnumerator that can be used to run the fade operation in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__System_Action__examples">Examples</h5>
   <pre><code>// Usage example:
 IEnumerator FadeExample(AudioSource audioSource)
 {
@@ -210,7 +210,7 @@ StartCoroutine(audioSource.FadeVolume(1.5f, 1f));</code></pre>
   
   
   <a id="MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,Action)">PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_System_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,System.Action)">PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)</h4>
   <div class="markdown level1 summary"><p>Plays an AudioClip on the given AudioSource and waits until it finishes playing,
 with an optional offset to end playback early and a callback when finished.</p>
 </div>
@@ -249,7 +249,7 @@ If the offset is greater than or equal to the clip length, the method exits earl
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the clip finishes playing.</p>
 </td>
@@ -266,13 +266,13 @@ If the offset is greater than or equal to the clip length, the method exits earl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span></td>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
         <td><p>An IEnumerator that can be used to run the operation in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_System_Action__examples">Examples</h5>
   <pre><code>// Usage example:
 IEnumerator PlayClip(AudioSource audioSource, AudioClip clip)
 {
@@ -343,7 +343,7 @@ void PlayClipWithVariance(AudioSource audioSource, AudioClip clip)
   
   
   <a id="MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,Action)">TransitionToClip(AudioSource, AudioClip, Nullable&lt;Single&gt;, Single, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_System_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,System.Action)">TransitionToClip(AudioSource, AudioClip, Nullable&lt;Single&gt;, Single, Action)</h4>
   <div class="markdown level1 summary"><p>Transitions the AudioSource to a new AudioClip by fading out the current clip (if playing),
 stopping it, and then fading in the new clip.</p>
 </div>
@@ -387,7 +387,7 @@ stopping it, and then fading in the new clip.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the transition is finished.</p>
 </td>
@@ -404,13 +404,13 @@ stopping it, and then fading in the new clip.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span></td>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
         <td><p>An IEnumerator that can be used to run the transition in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_System_Action__examples">Examples</h5>
   <pre><code>// Usage example:
 IEnumerator TransitionExample(AudioSource audioSource, AudioClip newClip)
 {
@@ -421,7 +421,7 @@ IEnumerator TransitionExample(AudioSource audioSource, AudioClip newClip)
   
   
   <a id="MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,Action)">WaitUntilFinished(AudioSource, Single, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_System_Action_" data-uid="MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,System.Action)">WaitUntilFinished(AudioSource, Single, Action)</h4>
   <div class="markdown level1 summary"><p>Waits until the current clip on the AudioSource finishes playing,
 with an optional offset to end early and a callback when finished.</p>
 </div>
@@ -454,7 +454,7 @@ If the offset is greater than or equal to the clip length, the method exits earl
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the clip finishes playing.</p>
 </td>
@@ -471,13 +471,13 @@ If the offset is greater than or equal to the clip length, the method exits earl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerator</span></td>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_System_Action__examples">Examples</h5>
   <pre><code>yield return audioSource.WaitUntilFinished(0.1f, () => Debug.Log(&quot;Done&quot;));</code></pre>
 
 </article>
