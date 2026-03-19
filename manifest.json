@@ -830,11 +830,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.GameObjects.TransformFollower.html",
+          "hash": "MmxjbUtK6/NqKU2a/kzy/vuqERF/hLAbV5hoL9Jpsp4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.GameObjects.yml",
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.GameObjects.html",
-          "hash": "11oOAwVFvfikwzekVlpq0LF6K/+yAhw9fuDlO4a0BwM="
+          "hash": "cvhvpECyQTi+28bXpLyT5E+g8r9hpd3BtWVRIo9mA0w="
         }
       },
       "is_incremental": false,
@@ -894,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "/aNOTqjRrX3kTs0KOAgYU5L7HWrlzrJGhvsiNzMrlNM="
+          "hash": "oSK5aZ7wMULYJh20yCWVC73CJD1hGm77s8CXqCjrmOQ="
         }
       },
       "is_incremental": false,
@@ -960,7 +972,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 73,
+          "total_file_count": 74,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
