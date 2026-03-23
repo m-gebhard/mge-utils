@@ -163,7 +163,7 @@ Can be extended to support different file types by implementing the abstract met
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -215,7 +215,7 @@ Can be extended to support different file types by implementing the abstract met
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>&gt;</td>
         <td><p>A list of file handles for the matching files.</p>
 </td>
       </tr>
@@ -224,7 +224,7 @@ Can be extended to support different file types by implementing the abstract met
   
   
   <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*"></a>
-  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_System_Action_System_Collections_Generic_IReadOnlyList__0___System_Action_System_Collections_Generic_IReadOnlyList__0___System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)">LoadFromDirectory(String, EStorageLocation, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;FileHandle, Int32&gt;, Int32)</h4>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)">LoadFromDirectory(String, EStorageLocation, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;FileHandle, Int32&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Loads files from a specified directory asynchronously in batches.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -255,19 +255,19 @@ Can be extended to support different file types by implementing the abstract met
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">onLoadingFinished</span></td>
         <td><p>Callback invoked when all files have been loaded successfully; receives the list of loaded items.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">onBatchFinished</span></td>
         <td><p>Callback invoked after each batch of files is loaded; receives the full list of currently loaded items.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
         <td><p>Callback invoked for each file that fails to load; receives the file handle and an integer error code.</p>
 </td>
@@ -290,7 +290,7 @@ Can be extended to support different file types by implementing the abstract met
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An enumerator for the coroutine.</p>
 </td>
       </tr>
@@ -299,7 +299,7 @@ Can be extended to support different file types by implementing the abstract met
   
   
   <a id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*"></a>
-  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_System_Action__0__System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{`0},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})">LoadSingleFileRoutine(FileHandle, Action&lt;T&gt;, Action&lt;FileHandle, Int32&gt;)</h4>
+  <h4 id="MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__" data-uid="MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})">LoadSingleFileRoutine(FileHandle, Action&lt;T&gt;, Action&lt;FileHandle, Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Loads a single file asynchronously.
 Must be implemented by derived classes to handle the loading/parsing of the specific file type.</p>
 </div>
@@ -325,13 +325,13 @@ Must be implemented by derived classes to handle the loading/parsing of the spec
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">onLoadingFinished</span></td>
         <td><p>Callback invoked with the loaded item upon success.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="MGeLabs.Utils.Data.FileHandle.html">FileHandle</a>, <span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
         <td><p>Callback invoked if the file fails to load.</p>
 </td>
@@ -348,7 +348,7 @@ Must be implemented by derived classes to handle the loading/parsing of the spec
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An enumerator for the coroutine.</p>
 </td>
       </tr>

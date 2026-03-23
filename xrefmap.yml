@@ -20,22 +20,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches
   nameWithType: Batcher.ProcessInBatches
-- uid: MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches<T>(System.Collections.Generic.IReadOnlyList<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-- uid: MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,System.Collections.IEnumerator},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+- uid: MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name: ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
-  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Func___0_System_Collections_IEnumerator__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___
-  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Func{``0,System.Collections.IEnumerator},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name.vb: ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
-  fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches<T>(System.Collections.Generic.IReadOnlyList<T>, System.Func<T, System.Collections.IEnumerator>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>)
-  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.Func(Of T, System.Collections.IEnumerator), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
   nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
   nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched*
@@ -45,22 +45,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched
   nameWithType: Batcher.ProcessPreBatched
-- uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Action{``0},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Action___0__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Action___0__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Action{``0},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched<T>(System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T>, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T), System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-- uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Func{``0,System.Collections.IEnumerator},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+- uid: MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Func{``0,IEnumerator},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name: ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
-  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Func___0_System_Collections_IEnumerator__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___
-  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Func{``0,System.Collections.IEnumerator},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+  href: api/MGeLabs.Utils.Data.Batcher.html#MGeLabs_Utils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Func___0_IEnumerator__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Func{``0,IEnumerator},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name.vb: ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
-  fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched<T>(System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<T>>, System.Func<T, System.Collections.IEnumerator>, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>)
-  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Func(Of T, System.Collections.IEnumerator), System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Data.Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
   nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Func<T, IEnumerator>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
   nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Func(Of T, IEnumerator), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Data.Crypter
@@ -173,13 +173,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.ExternalAudioLoader.GetAudioType
   nameWithType: ExternalAudioLoader.GetAudioType
-- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{AudioClip},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+- uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name: LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, Int32>)
-  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_System_Action_AudioClip__System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
-  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{AudioClip},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  href: api/MGeLabs.Utils.Data.ExternalAudioLoader.html#MGeLabs_Utils_Data_ExternalAudioLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_AudioClip__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{AudioClip},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name.vb: LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, Int32))
-  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action<AudioClip>, System.Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action(Of AudioClip), System.Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  fullName: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<AudioClip>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of AudioClip), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
   nameWithType: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action<AudioClip>, Action<FileHandle, Int32>)
   nameWithType.vb: ExternalAudioLoader.LoadSingleFileRoutine(FileHandle, Action(Of AudioClip), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalAudioLoader.LoadSingleFileRoutine*
@@ -228,13 +228,13 @@ references:
   fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).FindFilesInDirectory
   nameWithType: ExternalFileLoaderBase<T>.FindFilesInDirectory
   nameWithType.vb: ExternalFileLoaderBase(Of T).FindFilesInDirectory
-- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
   name: LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, Int32>, Int32)
-  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_System_Action_System_Collections_Generic_IReadOnlyList__0___System_Action_System_Collections_Generic_IReadOnlyList__0___System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_
-  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{System.Collections.Generic.IReadOnlyList{`0}},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadFromDirectory_System_String_MGeLabs_Utils_Data_EStorageLocation_Action_IReadOnlyList__0___Action_IReadOnlyList__0___Action_MGeLabs_Utils_Data_FileHandle_System_Int32__System_Int32_
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory(System.String,MGeLabs.Utils.Data.EStorageLocation,Action{IReadOnlyList{`0}},Action{IReadOnlyList{`0}},Action{MGeLabs.Utils.Data.FileHandle,System.Int32},System.Int32)
   name.vb: LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, Int32), Int32)
-  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<MGeLabs.Utils.Data.FileHandle, System.Int32>, System.Int32)
-  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32), System.Int32)
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>, System.Int32)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory(System.String, MGeLabs.Utils.Data.EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32), System.Int32)
   nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory(String, EStorageLocation, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<FileHandle, Int32>, Int32)
   nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory(String, EStorageLocation, Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of FileHandle, Int32), Int32)
 - uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadFromDirectory*
@@ -246,13 +246,13 @@ references:
   fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadFromDirectory
   nameWithType: ExternalFileLoaderBase<T>.LoadFromDirectory
   nameWithType.vb: ExternalFileLoaderBase(Of T).LoadFromDirectory
-- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{`0},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+- uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name: LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, Int32>)
-  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_System_Action__0__System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
-  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{`0},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  href: api/MGeLabs.Utils.Data.ExternalFileLoaderBase-1.html#MGeLabs_Utils_Data_ExternalFileLoaderBase_1_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action__0__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{`0},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name.vb: LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, Int32))
-  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action<T>, System.Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action(Of T), System.Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  fullName: MGeLabs.Utils.Data.ExternalFileLoaderBase<T>.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<T>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of T), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
   nameWithType: ExternalFileLoaderBase<T>.LoadSingleFileRoutine(FileHandle, Action<T>, Action<FileHandle, Int32>)
   nameWithType.vb: ExternalFileLoaderBase(Of T).LoadSingleFileRoutine(FileHandle, Action(Of T), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalFileLoaderBase`1.LoadSingleFileRoutine*
@@ -287,13 +287,13 @@ references:
   commentId: T:MGeLabs.Utils.Data.ExternalTextureLoader
   fullName: MGeLabs.Utils.Data.ExternalTextureLoader
   nameWithType: ExternalTextureLoader
-- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{Texture2D},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+- uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name: LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, Int32>)
-  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_System_Action_Texture2D__System_Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
-  commentId: M:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,System.Action{Texture2D},System.Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
+  href: api/MGeLabs.Utils.Data.ExternalTextureLoader.html#MGeLabs_Utils_Data_ExternalTextureLoader_LoadSingleFileRoutine_MGeLabs_Utils_Data_FileHandle_Action_Texture2D__Action_MGeLabs_Utils_Data_FileHandle_System_Int32__
+  commentId: M:MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle,Action{Texture2D},Action{MGeLabs.Utils.Data.FileHandle,System.Int32})
   name.vb: LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, Int32))
-  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action<Texture2D>, System.Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
-  fullName.vb: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, System.Action(Of Texture2D), System.Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
+  fullName: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action<Texture2D>, Action<MGeLabs.Utils.Data.FileHandle, System.Int32>)
+  fullName.vb: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine(MGeLabs.Utils.Data.FileHandle, Action(Of Texture2D), Action(Of MGeLabs.Utils.Data.FileHandle, System.Int32))
   nameWithType: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action<Texture2D>, Action<FileHandle, Int32>)
   nameWithType.vb: ExternalTextureLoader.LoadSingleFileRoutine(FileHandle, Action(Of Texture2D), Action(Of FileHandle, Int32))
 - uid: MGeLabs.Utils.Data.ExternalTextureLoader.LoadSingleFileRoutine*
@@ -368,13 +368,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.FadeTransitions.FadeValue
   nameWithType: FadeTransitions.FadeValue
-- uid: MGeLabs.Utils.Data.FadeTransitions.FadeValue``1(System.Func{``0},System.Action{``0},``0,System.Func{``0,``0,System.Single,``0},System.Single)
+- uid: MGeLabs.Utils.Data.FadeTransitions.FadeValue``1(Func{``0},Action{``0},``0,Func{``0,``0,System.Single,``0},System.Single)
   name: FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, Single, T>, Single)
-  href: api/MGeLabs.Utils.Data.FadeTransitions.html#MGeLabs_Utils_Data_FadeTransitions_FadeValue__1_System_Func___0__System_Action___0____0_System_Func___0___0_System_Single___0__System_Single_
-  commentId: M:MGeLabs.Utils.Data.FadeTransitions.FadeValue``1(System.Func{``0},System.Action{``0},``0,System.Func{``0,``0,System.Single,``0},System.Single)
+  href: api/MGeLabs.Utils.Data.FadeTransitions.html#MGeLabs_Utils_Data_FadeTransitions_FadeValue__1_Func___0__Action___0____0_Func___0___0_System_Single___0__System_Single_
+  commentId: M:MGeLabs.Utils.Data.FadeTransitions.FadeValue``1(Func{``0},Action{``0},``0,Func{``0,``0,System.Single,``0},System.Single)
   name.vb: FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, Single, T), Single)
-  fullName: MGeLabs.Utils.Data.FadeTransitions.FadeValue<T>(System.Func<T>, System.Action<T>, T, System.Func<T, T, System.Single, T>, System.Single)
-  fullName.vb: MGeLabs.Utils.Data.FadeTransitions.FadeValue(Of T)(System.Func(Of T), System.Action(Of T), T, System.Func(Of T, T, System.Single, T), System.Single)
+  fullName: MGeLabs.Utils.Data.FadeTransitions.FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, System.Single, T>, System.Single)
+  fullName.vb: MGeLabs.Utils.Data.FadeTransitions.FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, System.Single, T), System.Single)
   nameWithType: FadeTransitions.FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, Single, T>, Single)
   nameWithType.vb: FadeTransitions.FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, Single, T), Single)
 - uid: MGeLabs.Utils.Data.FileHandle
@@ -852,13 +852,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Data.FileManager.MoveDirectory
   nameWithType: FileManager.MoveDirectory
-- uid: MGeLabs.Utils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})
+- uid: MGeLabs.Utils.Data.FileManager.TryIOAction(Action,System.String,Action{Exception,System.String})
   name: TryIOAction(Action, String, Action<Exception, String>)
-  href: api/MGeLabs.Utils.Data.FileManager.html#MGeLabs_Utils_Data_FileManager_TryIOAction_System_Action_System_String_System_Action_System_Exception_System_String__
-  commentId: M:MGeLabs.Utils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})
+  href: api/MGeLabs.Utils.Data.FileManager.html#MGeLabs_Utils_Data_FileManager_TryIOAction_Action_System_String_Action_Exception_System_String__
+  commentId: M:MGeLabs.Utils.Data.FileManager.TryIOAction(Action,System.String,Action{Exception,System.String})
   name.vb: TryIOAction(Action, String, Action(Of Exception, String))
-  fullName: MGeLabs.Utils.Data.FileManager.TryIOAction(System.Action, System.String, System.Action<System.Exception, System.String>)
-  fullName.vb: MGeLabs.Utils.Data.FileManager.TryIOAction(System.Action, System.String, System.Action(Of System.Exception, System.String))
+  fullName: MGeLabs.Utils.Data.FileManager.TryIOAction(Action, System.String, Action<Exception, System.String>)
+  fullName.vb: MGeLabs.Utils.Data.FileManager.TryIOAction(Action, System.String, Action(Of Exception, System.String))
   nameWithType: FileManager.TryIOAction(Action, String, Action<Exception, String>)
   nameWithType.vb: FileManager.TryIOAction(Action, String, Action(Of Exception, String))
 - uid: MGeLabs.Utils.Data.FileManager.TryIOAction*
@@ -969,13 +969,13 @@ references:
   fullName.vb: MGeLabs.Utils.Data.LerpValue(Of T)
   nameWithType: LerpValue<T>
   nameWithType.vb: LerpValue(Of T)
-- uid: MGeLabs.Utils.Data.LerpValue`1.#ctor(`0,System.Func{`0,`0,System.Single,`0},System.Single)
+- uid: MGeLabs.Utils.Data.LerpValue`1.#ctor(`0,Func{`0,`0,System.Single,`0},System.Single)
   name: LerpValue(T, Func<T, T, Single, T>, Single)
-  href: api/MGeLabs.Utils.Data.LerpValue-1.html#MGeLabs_Utils_Data_LerpValue_1__ctor__0_System_Func__0__0_System_Single__0__System_Single_
-  commentId: M:MGeLabs.Utils.Data.LerpValue`1.#ctor(`0,System.Func{`0,`0,System.Single,`0},System.Single)
+  href: api/MGeLabs.Utils.Data.LerpValue-1.html#MGeLabs_Utils_Data_LerpValue_1__ctor__0_Func__0__0_System_Single__0__System_Single_
+  commentId: M:MGeLabs.Utils.Data.LerpValue`1.#ctor(`0,Func{`0,`0,System.Single,`0},System.Single)
   name.vb: LerpValue(T, Func(Of T, T, Single, T), Single)
-  fullName: MGeLabs.Utils.Data.LerpValue<T>.LerpValue(T, System.Func<T, T, System.Single, T>, System.Single)
-  fullName.vb: MGeLabs.Utils.Data.LerpValue(Of T).LerpValue(T, System.Func(Of T, T, System.Single, T), System.Single)
+  fullName: MGeLabs.Utils.Data.LerpValue<T>.LerpValue(T, Func<T, T, System.Single, T>, System.Single)
+  fullName.vb: MGeLabs.Utils.Data.LerpValue(Of T).LerpValue(T, Func(Of T, T, System.Single, T), System.Single)
   nameWithType: LerpValue<T>.LerpValue(T, Func<T, T, Single, T>, Single)
   nameWithType.vb: LerpValue(Of T).LerpValue(T, Func(Of T, T, Single, T), Single)
 - uid: MGeLabs.Utils.Data.LerpValue`1.#ctor*
@@ -1317,25 +1317,6 @@ references:
   fullName.vb: MGeLabs.Utils.Data.ObservableList(Of T).Remove
   nameWithType: ObservableList<T>.Remove
   nameWithType.vb: ObservableList(Of T).Remove
-- uid: MGeLabs.Utils.Data.ObservableList`1.System#Collections#IEnumerable#GetEnumerator
-  name: IEnumerable.GetEnumerator()
-  href: api/MGeLabs.Utils.Data.ObservableList-1.html#MGeLabs_Utils_Data_ObservableList_1_System_Collections_IEnumerable_GetEnumerator
-  commentId: M:MGeLabs.Utils.Data.ObservableList`1.System#Collections#IEnumerable#GetEnumerator
-  name.vb: System.Collections.IEnumerable.GetEnumerator()
-  fullName: MGeLabs.Utils.Data.ObservableList<T>.System.Collections.IEnumerable.GetEnumerator()
-  fullName.vb: MGeLabs.Utils.Data.ObservableList(Of T).System.Collections.IEnumerable.GetEnumerator()
-  nameWithType: ObservableList<T>.IEnumerable.GetEnumerator()
-  nameWithType.vb: ObservableList(Of T).System.Collections.IEnumerable.GetEnumerator()
-- uid: MGeLabs.Utils.Data.ObservableList`1.System#Collections#IEnumerable#GetEnumerator*
-  name: IEnumerable.GetEnumerator
-  href: api/MGeLabs.Utils.Data.ObservableList-1.html#MGeLabs_Utils_Data_ObservableList_1_System_Collections_IEnumerable_GetEnumerator_
-  commentId: Overload:MGeLabs.Utils.Data.ObservableList`1.System#Collections#IEnumerable#GetEnumerator
-  isSpec: "True"
-  name.vb: System.Collections.IEnumerable.GetEnumerator
-  fullName: MGeLabs.Utils.Data.ObservableList<T>.System.Collections.IEnumerable.GetEnumerator
-  fullName.vb: MGeLabs.Utils.Data.ObservableList(Of T).System.Collections.IEnumerable.GetEnumerator
-  nameWithType: ObservableList<T>.IEnumerable.GetEnumerator
-  nameWithType.vb: ObservableList(Of T).System.Collections.IEnumerable.GetEnumerator
 - uid: MGeLabs.Utils.Data.WaitHelper
   name: WaitHelper
   href: api/MGeLabs.Utils.Data.WaitHelper.html
@@ -1454,11 +1435,11 @@ references:
   commentId: T:MGeLabs.Utils.Debugging.LogEntry
   fullName: MGeLabs.Utils.Debugging.LogEntry
   nameWithType: LogEntry
-- uid: MGeLabs.Utils.Debugging.LogEntry.#ctor(System.String,System.DateTime,System.String,System.String)
+- uid: MGeLabs.Utils.Debugging.LogEntry.#ctor(System.String,DateTime,System.String,System.String)
   name: LogEntry(String, DateTime, String, String)
-  href: api/MGeLabs.Utils.Debugging.LogEntry.html#MGeLabs_Utils_Debugging_LogEntry__ctor_System_String_System_DateTime_System_String_System_String_
-  commentId: M:MGeLabs.Utils.Debugging.LogEntry.#ctor(System.String,System.DateTime,System.String,System.String)
-  fullName: MGeLabs.Utils.Debugging.LogEntry.LogEntry(System.String, System.DateTime, System.String, System.String)
+  href: api/MGeLabs.Utils.Debugging.LogEntry.html#MGeLabs_Utils_Debugging_LogEntry__ctor_System_String_DateTime_System_String_System_String_
+  commentId: M:MGeLabs.Utils.Debugging.LogEntry.#ctor(System.String,DateTime,System.String,System.String)
+  fullName: MGeLabs.Utils.Debugging.LogEntry.LogEntry(System.String, DateTime, System.String, System.String)
   nameWithType: LogEntry.LogEntry(String, DateTime, String, String)
 - uid: MGeLabs.Utils.Debugging.LogEntry.#ctor*
   name: LogEntry
@@ -1547,6 +1528,12 @@ references:
   commentId: T:MGeLabs.Utils.Editor.ColliderBoundsDrawer
   fullName: MGeLabs.Utils.Editor.ColliderBoundsDrawer
   nameWithType: ColliderBoundsDrawer
+- uid: MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
+  name: ReadOnlyFieldAttribute
+  href: api/MGeLabs.Utils.Editor.ReadOnlyFieldAttribute.html
+  commentId: T:MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
+  fullName: MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
+  nameWithType: ReadOnlyFieldAttribute
 - uid: MGeLabs.Utils.EventSystem
   name: MGeLabs.Utils.EventSystem
   href: api/MGeLabs.Utils.EventSystem.html
@@ -1562,13 +1549,13 @@ references:
   fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel)
   nameWithType: EventChannel<TChannel>
   nameWithType.vb: EventChannel(Of TChannel)
-- uid: MGeLabs.Utils.EventSystem.EventChannel`1.HandleHandlersToRemove(System.Collections.Generic.Dictionary{System.Int32,System.Action{MGeLabs.Utils.EventSystem.IEvent{`0}}})
+- uid: MGeLabs.Utils.EventSystem.EventChannel`1.HandleHandlersToRemove(Dictionary{System.Int32,Action{MGeLabs.Utils.EventSystem.IEvent{`0}}})
   name: HandleHandlersToRemove(Dictionary<Int32, Action<IEvent<TChannel>>>)
-  href: api/MGeLabs.Utils.EventSystem.EventChannel-1.html#MGeLabs_Utils_EventSystem_EventChannel_1_HandleHandlersToRemove_System_Collections_Generic_Dictionary_System_Int32_System_Action_MGeLabs_Utils_EventSystem_IEvent__0____
-  commentId: M:MGeLabs.Utils.EventSystem.EventChannel`1.HandleHandlersToRemove(System.Collections.Generic.Dictionary{System.Int32,System.Action{MGeLabs.Utils.EventSystem.IEvent{`0}}})
+  href: api/MGeLabs.Utils.EventSystem.EventChannel-1.html#MGeLabs_Utils_EventSystem_EventChannel_1_HandleHandlersToRemove_Dictionary_System_Int32_Action_MGeLabs_Utils_EventSystem_IEvent__0____
+  commentId: M:MGeLabs.Utils.EventSystem.EventChannel`1.HandleHandlersToRemove(Dictionary{System.Int32,Action{MGeLabs.Utils.EventSystem.IEvent{`0}}})
   name.vb: HandleHandlersToRemove(Dictionary(Of Int32, Action(Of IEvent(Of TChannel))))
-  fullName: MGeLabs.Utils.EventSystem.EventChannel<TChannel>.HandleHandlersToRemove(System.Collections.Generic.Dictionary<System.Int32, System.Action<MGeLabs.Utils.EventSystem.IEvent<TChannel>>>)
-  fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel).HandleHandlersToRemove(System.Collections.Generic.Dictionary(Of System.Int32, System.Action(Of MGeLabs.Utils.EventSystem.IEvent(Of TChannel))))
+  fullName: MGeLabs.Utils.EventSystem.EventChannel<TChannel>.HandleHandlersToRemove(Dictionary<System.Int32, Action<MGeLabs.Utils.EventSystem.IEvent<TChannel>>>)
+  fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel).HandleHandlersToRemove(Dictionary(Of System.Int32, Action(Of MGeLabs.Utils.EventSystem.IEvent(Of TChannel))))
   nameWithType: EventChannel<TChannel>.HandleHandlersToRemove(Dictionary<Int32, Action<IEvent<TChannel>>>)
   nameWithType.vb: EventChannel(Of TChannel).HandleHandlersToRemove(Dictionary(Of Int32, Action(Of IEvent(Of TChannel))))
 - uid: MGeLabs.Utils.EventSystem.EventChannel`1.HandleHandlersToRemove*
@@ -1647,13 +1634,13 @@ references:
   fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel).Subscribe
   nameWithType: EventChannel<TChannel>.Subscribe
   nameWithType.vb: EventChannel(Of TChannel).Subscribe
-- uid: MGeLabs.Utils.EventSystem.EventChannel`1.Subscribe``1(System.Action{``0})
+- uid: MGeLabs.Utils.EventSystem.EventChannel`1.Subscribe``1(Action{``0})
   name: Subscribe<TEvent>(Action<TEvent>)
-  href: api/MGeLabs.Utils.EventSystem.EventChannel-1.html#MGeLabs_Utils_EventSystem_EventChannel_1_Subscribe__1_System_Action___0__
-  commentId: M:MGeLabs.Utils.EventSystem.EventChannel`1.Subscribe``1(System.Action{``0})
+  href: api/MGeLabs.Utils.EventSystem.EventChannel-1.html#MGeLabs_Utils_EventSystem_EventChannel_1_Subscribe__1_Action___0__
+  commentId: M:MGeLabs.Utils.EventSystem.EventChannel`1.Subscribe``1(Action{``0})
   name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
-  fullName: MGeLabs.Utils.EventSystem.EventChannel<TChannel>.Subscribe<TEvent>(System.Action<TEvent>)
-  fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel).Subscribe(Of TEvent)(System.Action(Of TEvent))
+  fullName: MGeLabs.Utils.EventSystem.EventChannel<TChannel>.Subscribe<TEvent>(Action<TEvent>)
+  fullName.vb: MGeLabs.Utils.EventSystem.EventChannel(Of TChannel).Subscribe(Of TEvent)(Action(Of TEvent))
   nameWithType: EventChannel<TChannel>.Subscribe<TEvent>(Action<TEvent>)
   nameWithType.vb: EventChannel(Of TChannel).Subscribe(Of TEvent)(Action(Of TEvent))
 - uid: MGeLabs.Utils.EventSystem.EventChannel`1.Unsubscribe*
@@ -1768,13 +1755,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.EventSystem.EventManager.Subscribe
   nameWithType: EventManager.Subscribe
-- uid: MGeLabs.Utils.EventSystem.EventManager.Subscribe``2(System.Action{``1})
+- uid: MGeLabs.Utils.EventSystem.EventManager.Subscribe``2(Action{``1})
   name: Subscribe<TChannel, TEvent>(Action<TEvent>)
-  href: api/MGeLabs.Utils.EventSystem.EventManager.html#MGeLabs_Utils_EventSystem_EventManager_Subscribe__2_System_Action___1__
-  commentId: M:MGeLabs.Utils.EventSystem.EventManager.Subscribe``2(System.Action{``1})
+  href: api/MGeLabs.Utils.EventSystem.EventManager.html#MGeLabs_Utils_EventSystem_EventManager_Subscribe__2_Action___1__
+  commentId: M:MGeLabs.Utils.EventSystem.EventManager.Subscribe``2(Action{``1})
   name.vb: Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
-  fullName: MGeLabs.Utils.EventSystem.EventManager.Subscribe<TChannel, TEvent>(System.Action<TEvent>)
-  fullName.vb: MGeLabs.Utils.EventSystem.EventManager.Subscribe(Of TChannel, TEvent)(System.Action(Of TEvent))
+  fullName: MGeLabs.Utils.EventSystem.EventManager.Subscribe<TChannel, TEvent>(Action<TEvent>)
+  fullName.vb: MGeLabs.Utils.EventSystem.EventManager.Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
   nameWithType: EventManager.Subscribe<TChannel, TEvent>(Action<TEvent>)
   nameWithType.vb: EventManager.Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
 - uid: MGeLabs.Utils.EventSystem.EventManager.Unsubscribe*
@@ -1849,13 +1836,13 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.AudioSourceExtension
   fullName: MGeLabs.Utils.Extensions.AudioSourceExtension
   nameWithType: AudioSourceExtension
-- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},System.Action)
+- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},Action)
   name: FadeVolume(AudioSource, Single, Single, Nullable<Single>, Action)
-  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},System.Action)
+  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__Action_
+  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},Action)
   name.vb: FadeVolume(AudioSource, Single, Single, Nullable(Of Single), Action)
-  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable<System.Single>, System.Action)
-  fullName.vb: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable(Of System.Single), System.Action)
+  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable<System.Single>, Action)
+  fullName.vb: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable(Of System.Single), Action)
   nameWithType: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable<Single>, Action)
   nameWithType.vb: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable(Of Single), Action)
 - uid: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume*
@@ -1865,11 +1852,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.FadeVolume
   nameWithType: AudioSourceExtension.FadeVolume
-- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,System.Action)
+- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,Action)
   name: PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)
-  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,System.Action)
-  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource, AudioClip, System.Single, System.Action)
+  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_Action_
+  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,Action)
+  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource, AudioClip, System.Single, Action)
   nameWithType: AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)
 - uid: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished*
   name: PlayAndWaitUntilFinished
@@ -1891,13 +1878,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.PlayOneShotWithVariance
   nameWithType: AudioSourceExtension.PlayOneShotWithVariance
-- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,System.Action)
+- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,Action)
   name: TransitionToClip(AudioSource, AudioClip, Nullable<Single>, Single, Action)
-  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,System.Action)
+  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_Action_
+  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,Action)
   name.vb: TransitionToClip(AudioSource, AudioClip, Nullable(Of Single), Single, Action)
-  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable<System.Single>, System.Single, System.Action)
-  fullName.vb: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable(Of System.Single), System.Single, System.Action)
+  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable<System.Single>, System.Single, Action)
+  fullName.vb: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable(Of System.Single), System.Single, Action)
   nameWithType: AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, Nullable<Single>, Single, Action)
   nameWithType.vb: AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, Nullable(Of Single), Single, Action)
 - uid: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip*
@@ -1907,11 +1894,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.TransitionToClip
   nameWithType: AudioSourceExtension.TransitionToClip
-- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,System.Action)
+- uid: MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,Action)
   name: WaitUntilFinished(AudioSource, Single, Action)
-  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,System.Action)
-  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource, System.Single, System.Action)
+  href: api/MGeLabs.Utils.Extensions.AudioSourceExtension.html#MGeLabs_Utils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_Action_
+  commentId: M:MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,Action)
+  fullName: MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource, System.Single, Action)
   nameWithType: AudioSourceExtension.WaitUntilFinished(AudioSource, Single, Action)
 - uid: MGeLabs.Utils.Extensions.AudioSourceExtension.WaitUntilFinished*
   name: WaitUntilFinished
@@ -1945,13 +1932,13 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.CameraExtension
   fullName: MGeLabs.Utils.Extensions.CameraExtension
   nameWithType: CameraExtension
-- uid: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera,System.Action{System.Byte[]},LayerMask)
+- uid: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera,Action{System.Byte[]},LayerMask)
   name: Capture(Camera, Action<Byte[]>, LayerMask)
-  href: api/MGeLabs.Utils.Extensions.CameraExtension.html#MGeLabs_Utils_Extensions_CameraExtension_Capture_Camera_System_Action_System_Byte____LayerMask_
-  commentId: M:MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera,System.Action{System.Byte[]},LayerMask)
+  href: api/MGeLabs.Utils.Extensions.CameraExtension.html#MGeLabs_Utils_Extensions_CameraExtension_Capture_Camera_Action_System_Byte____LayerMask_
+  commentId: M:MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera,Action{System.Byte[]},LayerMask)
   name.vb: Capture(Camera, Action(Of Byte()), LayerMask)
-  fullName: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera, System.Action<System.Byte[]>, LayerMask)
-  fullName.vb: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera, System.Action(Of System.Byte()), LayerMask)
+  fullName: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera, Action<System.Byte[]>, LayerMask)
+  fullName.vb: MGeLabs.Utils.Extensions.CameraExtension.Capture(Camera, Action(Of System.Byte()), LayerMask)
   nameWithType: CameraExtension.Capture(Camera, Action<Byte[]>, LayerMask)
   nameWithType.vb: CameraExtension.Capture(Camera, Action(Of Byte()), LayerMask)
 - uid: MGeLabs.Utils.Extensions.CameraExtension.Capture*
@@ -2149,13 +2136,13 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.ListExtension
   fullName: MGeLabs.Utils.Extensions.ListExtension
   nameWithType: ListExtension
-- uid: MGeLabs.Utils.Extensions.ListExtension.Center(System.Collections.Generic.List{Vector3})
+- uid: MGeLabs.Utils.Extensions.ListExtension.Center(List{Vector3})
   name: Center(List<Vector3>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Center_System_Collections_Generic_List_Vector3__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Center(System.Collections.Generic.List{Vector3})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Center_List_Vector3__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Center(List{Vector3})
   name.vb: Center(List(Of Vector3))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Center(System.Collections.Generic.List<Vector3>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Center(System.Collections.Generic.List(Of Vector3))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Center(List<Vector3>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Center(List(Of Vector3))
   nameWithType: ListExtension.Center(List<Vector3>)
   nameWithType.vb: ListExtension.Center(List(Of Vector3))
 - uid: MGeLabs.Utils.Extensions.ListExtension.Center*
@@ -2172,13 +2159,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Chunk
   nameWithType: ListExtension.Chunk
-- uid: MGeLabs.Utils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Chunk``1(List{``0},System.Int32)
   name: Chunk<T>(List<T>, Int32)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Chunk__1_System_Collections_Generic_List___0__System_Int32_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Chunk__1_List___0__System_Int32_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Chunk``1(List{``0},System.Int32)
   name.vb: Chunk(Of T)(List(Of T), Int32)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Chunk<T>(System.Collections.Generic.List<T>, System.Int32)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Chunk(Of T)(System.Collections.Generic.List(Of T), System.Int32)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Chunk<T>(List<T>, System.Int32)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Chunk(Of T)(List(Of T), System.Int32)
   nameWithType: ListExtension.Chunk<T>(List<T>, Int32)
   nameWithType.vb: ListExtension.Chunk(Of T)(List(Of T), Int32)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Clone*
@@ -2188,13 +2175,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Clone
   nameWithType: ListExtension.Clone
-- uid: MGeLabs.Utils.Extensions.ListExtension.Clone``1(System.Collections.Generic.List{``0})
+- uid: MGeLabs.Utils.Extensions.ListExtension.Clone``1(List{``0})
   name: Clone<T>(List<T>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Clone__1_System_Collections_Generic_List___0__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Clone``1(System.Collections.Generic.List{``0})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Clone__1_List___0__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Clone``1(List{``0})
   name.vb: Clone(Of T)(List(Of T))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Clone<T>(System.Collections.Generic.List<T>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Clone(Of T)(System.Collections.Generic.List(Of T))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Clone<T>(List<T>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Clone(Of T)(List(Of T))
   nameWithType: ListExtension.Clone<T>(List<T>)
   nameWithType.vb: ListExtension.Clone(Of T)(List(Of T))
 - uid: MGeLabs.Utils.Extensions.ListExtension.Flatten*
@@ -2204,22 +2191,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Flatten
   nameWithType: ListExtension.Flatten
-- uid: MGeLabs.Utils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+- uid: MGeLabs.Utils.Extensions.ListExtension.Flatten``1(List{List{``0}})
   name: Flatten<T>(List<List<T>>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Flatten__1_System_Collections_Generic_List_System_Collections_Generic_List___0___
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Flatten__1_List_List___0___
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Flatten``1(List{List{``0}})
   name.vb: Flatten(Of T)(List(Of List(Of T)))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Flatten<T>(System.Collections.Generic.List<System.Collections.Generic.List<T>>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Flatten(Of T)(System.Collections.Generic.List(Of System.Collections.Generic.List(Of T)))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Flatten<T>(List<List<T>>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Flatten(Of T)(List(Of List(Of T)))
   nameWithType: ListExtension.Flatten<T>(List<List<T>>)
   nameWithType.vb: ListExtension.Flatten(Of T)(List(Of List(Of T)))
-- uid: MGeLabs.Utils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Furthest(List{Transform},Transform)
   name: Furthest(List<Transform>, Transform)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Furthest_System_Collections_Generic_List_Transform__Transform_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Furthest_List_Transform__Transform_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Furthest(List{Transform},Transform)
   name.vb: Furthest(List(Of Transform), Transform)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Furthest(System.Collections.Generic.List<Transform>, Transform)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Furthest(System.Collections.Generic.List(Of Transform), Transform)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Furthest(List<Transform>, Transform)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Furthest(List(Of Transform), Transform)
   nameWithType: ListExtension.Furthest(List<Transform>, Transform)
   nameWithType.vb: ListExtension.Furthest(List(Of Transform), Transform)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Furthest*
@@ -2229,13 +2216,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Furthest
   nameWithType: ListExtension.Furthest
-- uid: MGeLabs.Utils.Extensions.ListExtension.Lerp(System.Collections.Generic.List{System.Single},System.Single)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Lerp(List{System.Single},System.Single)
   name: Lerp(List<Single>, Single)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Lerp_System_Collections_Generic_List_System_Single__System_Single_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Lerp(System.Collections.Generic.List{System.Single},System.Single)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Lerp_List_System_Single__System_Single_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Lerp(List{System.Single},System.Single)
   name.vb: Lerp(List(Of Single), Single)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Lerp(System.Collections.Generic.List<System.Single>, System.Single)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Lerp(System.Collections.Generic.List(Of System.Single), System.Single)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Lerp(List<System.Single>, System.Single)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Lerp(List(Of System.Single), System.Single)
   nameWithType: ListExtension.Lerp(List<Single>, Single)
   nameWithType.vb: ListExtension.Lerp(List(Of Single), Single)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Lerp*
@@ -2245,13 +2232,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Lerp
   nameWithType: ListExtension.Lerp
-- uid: MGeLabs.Utils.Extensions.ListExtension.Nearest(System.Collections.Generic.List{Transform},Transform)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Nearest(List{Transform},Transform)
   name: Nearest(List<Transform>, Transform)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Nearest_System_Collections_Generic_List_Transform__Transform_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Nearest(System.Collections.Generic.List{Transform},Transform)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Nearest_List_Transform__Transform_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Nearest(List{Transform},Transform)
   name.vb: Nearest(List(Of Transform), Transform)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Nearest(System.Collections.Generic.List<Transform>, Transform)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Nearest(System.Collections.Generic.List(Of Transform), Transform)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Nearest(List<Transform>, Transform)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Nearest(List(Of Transform), Transform)
   nameWithType: ListExtension.Nearest(List<Transform>, Transform)
   nameWithType.vb: ListExtension.Nearest(List(Of Transform), Transform)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Nearest*
@@ -2268,13 +2255,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Next
   nameWithType: ListExtension.Next
-- uid: MGeLabs.Utils.Extensions.ListExtension.Next``1(System.Collections.Generic.List{``0},``0)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Next``1(List{``0},``0)
   name: Next<T>(List<T>, T)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Next__1_System_Collections_Generic_List___0____0_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Next``1(System.Collections.Generic.List{``0},``0)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Next__1_List___0____0_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Next``1(List{``0},``0)
   name.vb: Next(Of T)(List(Of T), T)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Next<T>(System.Collections.Generic.List<T>, T)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Next(Of T)(System.Collections.Generic.List(Of T), T)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Next<T>(List<T>, T)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Next(Of T)(List(Of T), T)
   nameWithType: ListExtension.Next<T>(List<T>, T)
   nameWithType.vb: ListExtension.Next(Of T)(List(Of T), T)
 - uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches*
@@ -2284,22 +2271,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches
   nameWithType: ListExtension.ProcessInBatches
-- uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_ProcessInBatches__1_List___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches<T>(System.Collections.Generic.List<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(System.Collections.Generic.List(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches<T>(List<T>, Action<T>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-- uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Func{``0,System.Collections.IEnumerator},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+- uid: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name: ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Func___0_System_Collections_IEnumerator__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Func{``0,System.Collections.IEnumerator},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_ProcessInBatches__1_List___0__Func___0_IEnumerator__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Func{``0,IEnumerator},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}})
   name.vb: ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches<T>(System.Collections.Generic.List<T>, System.Func<T, System.Collections.IEnumerator>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(System.Collections.Generic.List(Of T), System.Func(Of T, System.Collections.IEnumerator), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
   nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Func<T, IEnumerator>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>)
   nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Func(Of T, IEnumerator), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)))
 - uid: MGeLabs.Utils.Extensions.ListExtension.Random*
@@ -2309,22 +2296,22 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Random
   nameWithType: ListExtension.Random
-- uid: MGeLabs.Utils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0})
+- uid: MGeLabs.Utils.Extensions.ListExtension.Random``1(List{``0})
   name: Random<T>(List<T>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Random__1_List___0__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Random``1(List{``0})
   name.vb: Random(Of T)(List(Of T))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Random<T>(System.Collections.Generic.List<T>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Random(Of T)(System.Collections.Generic.List(Of T))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Random<T>(List<T>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Random(Of T)(List(Of T))
   nameWithType: ListExtension.Random<T>(List<T>)
   nameWithType.vb: ListExtension.Random(Of T)(List(Of T))
-- uid: MGeLabs.Utils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0},System.Int32)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Random``1(List{``0},System.Int32)
   name: Random<T>(List<T>, Int32)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__System_Int32_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0},System.Int32)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Random__1_List___0__System_Int32_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Random``1(List{``0},System.Int32)
   name.vb: Random(Of T)(List(Of T), Int32)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Random<T>(System.Collections.Generic.List<T>, System.Int32)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Random(Of T)(System.Collections.Generic.List(Of T), System.Int32)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Random<T>(List<T>, System.Int32)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Random(Of T)(List(Of T), System.Int32)
   nameWithType: ListExtension.Random<T>(List<T>, Int32)
   nameWithType.vb: ListExtension.Random(Of T)(List(Of T), Int32)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Replace*
@@ -2334,13 +2321,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Replace
   nameWithType: ListExtension.Replace
-- uid: MGeLabs.Utils.Extensions.ListExtension.Replace``1(System.Collections.Generic.List{``0},``0,``0)
+- uid: MGeLabs.Utils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)
   name: Replace<T>(List<T>, T, T)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Replace__1_System_Collections_Generic_List___0____0___0_
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Replace``1(System.Collections.Generic.List{``0},``0,``0)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Replace__1_List___0____0___0_
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)
   name.vb: Replace(Of T)(List(Of T), T, T)
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Replace<T>(System.Collections.Generic.List<T>, T, T)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Replace(Of T)(System.Collections.Generic.List(Of T), T, T)
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Replace<T>(List<T>, T, T)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Replace(Of T)(List(Of T), T, T)
   nameWithType: ListExtension.Replace<T>(List<T>, T, T)
   nameWithType.vb: ListExtension.Replace(Of T)(List(Of T), T, T)
 - uid: MGeLabs.Utils.Extensions.ListExtension.Shuffle*
@@ -2350,13 +2337,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.Shuffle
   nameWithType: ListExtension.Shuffle
-- uid: MGeLabs.Utils.Extensions.ListExtension.Shuffle``1(System.Collections.Generic.List{``0})
+- uid: MGeLabs.Utils.Extensions.ListExtension.Shuffle``1(List{``0})
   name: Shuffle<T>(List<T>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Shuffle__1_System_Collections_Generic_List___0__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Shuffle``1(System.Collections.Generic.List{``0})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Shuffle__1_List___0__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.Shuffle``1(List{``0})
   name.vb: Shuffle(Of T)(List(Of T))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.Shuffle<T>(System.Collections.Generic.List<T>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Shuffle(Of T)(System.Collections.Generic.List(Of T))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.Shuffle<T>(List<T>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Shuffle(Of T)(List(Of T))
   nameWithType: ListExtension.Shuffle<T>(List<T>)
   nameWithType.vb: ListExtension.Shuffle(Of T)(List(Of T))
 - uid: MGeLabs.Utils.Extensions.ListExtension.SortInPlace*
@@ -2366,13 +2353,13 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ListExtension.SortInPlace
   nameWithType: ListExtension.SortInPlace
-- uid: MGeLabs.Utils.Extensions.ListExtension.SortInPlace``1(System.Collections.Generic.List{``0},System.Comparison{``0})
+- uid: MGeLabs.Utils.Extensions.ListExtension.SortInPlace``1(List{``0},Comparison{``0})
   name: SortInPlace<T>(List<T>, Comparison<T>)
-  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_SortInPlace__1_System_Collections_Generic_List___0__System_Comparison___0__
-  commentId: M:MGeLabs.Utils.Extensions.ListExtension.SortInPlace``1(System.Collections.Generic.List{``0},System.Comparison{``0})
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_SortInPlace__1_List___0__Comparison___0__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.SortInPlace``1(List{``0},Comparison{``0})
   name.vb: SortInPlace(Of T)(List(Of T), Comparison(Of T))
-  fullName: MGeLabs.Utils.Extensions.ListExtension.SortInPlace<T>(System.Collections.Generic.List<T>, System.Comparison<T>)
-  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.SortInPlace(Of T)(System.Collections.Generic.List(Of T), System.Comparison(Of T))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.SortInPlace<T>(List<T>, Comparison<T>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.SortInPlace(Of T)(List(Of T), Comparison(Of T))
   nameWithType: ListExtension.SortInPlace<T>(List<T>, Comparison<T>)
   nameWithType.vb: ListExtension.SortInPlace(Of T)(List(Of T), Comparison(Of T))
 - uid: MGeLabs.Utils.Extensions.ObjectExtension
@@ -2425,17 +2412,17 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.ObjectExtension.LogError
   nameWithType: ObjectExtension.LogError
-- uid: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.Exception)
+- uid: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,Exception)
   name: LogException(Object, Exception)
-  href: api/MGeLabs.Utils.Extensions.ObjectExtension.html#MGeLabs_Utils_Extensions_ObjectExtension_LogException_System_Object_System_Exception_
-  commentId: M:MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.Exception)
-  fullName: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object, System.Exception)
+  href: api/MGeLabs.Utils.Extensions.ObjectExtension.html#MGeLabs_Utils_Extensions_ObjectExtension_LogException_System_Object_Exception_
+  commentId: M:MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,Exception)
+  fullName: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object, Exception)
   nameWithType: ObjectExtension.LogException(Object, Exception)
-- uid: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.String,System.Exception)
+- uid: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.String,Exception)
   name: LogException(Object, String, Exception)
-  href: api/MGeLabs.Utils.Extensions.ObjectExtension.html#MGeLabs_Utils_Extensions_ObjectExtension_LogException_System_Object_System_String_System_Exception_
-  commentId: M:MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.String,System.Exception)
-  fullName: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object, System.String, System.Exception)
+  href: api/MGeLabs.Utils.Extensions.ObjectExtension.html#MGeLabs_Utils_Extensions_ObjectExtension_LogException_System_Object_System_String_Exception_
+  commentId: M:MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object,System.String,Exception)
+  fullName: MGeLabs.Utils.Extensions.ObjectExtension.LogException(System.Object, System.String, Exception)
   nameWithType: ObjectExtension.LogException(Object, String, Exception)
 - uid: MGeLabs.Utils.Extensions.ObjectExtension.LogException*
   name: LogException
@@ -2609,13 +2596,13 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.TransformExtension
   fullName: MGeLabs.Utils.Extensions.TransformExtension
   nameWithType: TransformExtension
-- uid: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,System.Func{Transform,System.Boolean},System.Boolean)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,Func{Transform,System.Boolean},System.Boolean)
   name: FindInHierarchy(Transform, Func<Transform, Boolean>, Boolean)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_System_Func_Transform_System_Boolean__System_Boolean_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,System.Func{Transform,System.Boolean},System.Boolean)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,Func{Transform,System.Boolean},System.Boolean)
   name.vb: FindInHierarchy(Transform, Func(Of Transform, Boolean), Boolean)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform, System.Func<Transform, System.Boolean>, System.Boolean)
-  fullName.vb: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform, System.Func(Of Transform, System.Boolean), System.Boolean)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform, Func<Transform, System.Boolean>, System.Boolean)
+  fullName.vb: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform, Func(Of Transform, System.Boolean), System.Boolean)
   nameWithType: TransformExtension.FindInHierarchy(Transform, Func<Transform, Boolean>, Boolean)
   nameWithType.vb: TransformExtension.FindInHierarchy(Transform, Func(Of Transform, Boolean), Boolean)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy*
@@ -2625,11 +2612,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy
   nameWithType: TransformExtension.FindInHierarchy
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
   name: MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform, Transform, System.Single, System.Boolean, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform, Transform, System.Single, System.Boolean, Action)
   nameWithType: TransformExtension.MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform*
   name: MoveAndRotateToTransform
@@ -2638,11 +2625,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform
   nameWithType: TransformExtension.MoveAndRotateToTransform
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)
   name: MoveToPosition(Transform, Vector3, Single, Boolean, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform, Vector3, System.Single, System.Boolean, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform, Vector3, System.Single, System.Boolean, Action)
   nameWithType: TransformExtension.MoveToPosition(Transform, Vector3, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition*
   name: MoveToPosition
@@ -2651,11 +2638,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition
   nameWithType: TransformExtension.MoveToPosition
-- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)
   name: MoveToTransform(Transform, Transform, Single, Boolean, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform, Transform, System.Single, System.Boolean, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform, Transform, System.Single, System.Boolean, Action)
   nameWithType: TransformExtension.MoveToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform*
   name: MoveToTransform
@@ -2696,11 +2683,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RaycastDirection
   nameWithType: TransformExtension.RaycastDirection
-- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)
   name: RotateToRotation(Transform, Quaternion, Single, Boolean, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform, Quaternion, System.Single, System.Boolean, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform, Quaternion, System.Single, System.Boolean, Action)
   nameWithType: TransformExtension.RotateToRotation(Transform, Quaternion, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation*
   name: RotateToRotation
@@ -2709,11 +2696,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation
   nameWithType: TransformExtension.RotateToRotation
-- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
   name: RotateToTransform(Transform, Transform, Single, Boolean, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform, Transform, System.Single, System.Boolean, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform, Transform, System.Single, System.Boolean, Action)
   nameWithType: TransformExtension.RotateToTransform(Transform, Transform, Single, Boolean, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform*
   name: RotateToTransform
@@ -2722,11 +2709,11 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform
   nameWithType: TransformExtension.RotateToTransform
-- uid: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,System.Action)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)
   name: ScaleTo(Transform, Vector3, Single, Action)
-  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_System_Action_
-  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,System.Action)
-  fullName: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform, Vector3, System.Single, System.Action)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform, Vector3, System.Single, Action)
   nameWithType: TransformExtension.ScaleTo(Transform, Vector3, Single, Action)
 - uid: MGeLabs.Utils.Extensions.TransformExtension.ScaleTo*
   name: ScaleTo
@@ -2836,13 +2823,13 @@ references:
   commentId: T:MGeLabs.Utils.FSM.FunctionPredicate
   fullName: MGeLabs.Utils.FSM.FunctionPredicate
   nameWithType: FunctionPredicate
-- uid: MGeLabs.Utils.FSM.FunctionPredicate.#ctor(System.Func{System.Boolean})
+- uid: MGeLabs.Utils.FSM.FunctionPredicate.#ctor(Func{System.Boolean})
   name: FunctionPredicate(Func<Boolean>)
-  href: api/MGeLabs.Utils.FSM.FunctionPredicate.html#MGeLabs_Utils_FSM_FunctionPredicate__ctor_System_Func_System_Boolean__
-  commentId: M:MGeLabs.Utils.FSM.FunctionPredicate.#ctor(System.Func{System.Boolean})
+  href: api/MGeLabs.Utils.FSM.FunctionPredicate.html#MGeLabs_Utils_FSM_FunctionPredicate__ctor_Func_System_Boolean__
+  commentId: M:MGeLabs.Utils.FSM.FunctionPredicate.#ctor(Func{System.Boolean})
   name.vb: FunctionPredicate(Func(Of Boolean))
-  fullName: MGeLabs.Utils.FSM.FunctionPredicate.FunctionPredicate(System.Func<System.Boolean>)
-  fullName.vb: MGeLabs.Utils.FSM.FunctionPredicate.FunctionPredicate(System.Func(Of System.Boolean))
+  fullName: MGeLabs.Utils.FSM.FunctionPredicate.FunctionPredicate(Func<System.Boolean>)
+  fullName.vb: MGeLabs.Utils.FSM.FunctionPredicate.FunctionPredicate(Func(Of System.Boolean))
   nameWithType: FunctionPredicate.FunctionPredicate(Func<Boolean>)
   nameWithType.vb: FunctionPredicate.FunctionPredicate(Func(Of Boolean))
 - uid: MGeLabs.Utils.FSM.FunctionPredicate.#ctor*
@@ -3278,13 +3265,13 @@ references:
   fullName.vb: MGeLabs.Utils.GameObjects.CacheDictionary(Of TKey, T).ContainsKey
   nameWithType: CacheDictionary<TKey, T>.ContainsKey
   nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey
-- uid: MGeLabs.Utils.GameObjects.CacheDictionary`2.GetOrAdd(`0,System.Func{`0,`1},System.Boolean)
+- uid: MGeLabs.Utils.GameObjects.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
   name: GetOrAdd(TKey, Func<TKey, T>, Boolean)
-  href: api/MGeLabs.Utils.GameObjects.CacheDictionary-2.html#MGeLabs_Utils_GameObjects_CacheDictionary_2_GetOrAdd__0_System_Func__0__1__System_Boolean_
-  commentId: M:MGeLabs.Utils.GameObjects.CacheDictionary`2.GetOrAdd(`0,System.Func{`0,`1},System.Boolean)
+  href: api/MGeLabs.Utils.GameObjects.CacheDictionary-2.html#MGeLabs_Utils_GameObjects_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_
+  commentId: M:MGeLabs.Utils.GameObjects.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
   name.vb: GetOrAdd(TKey, Func(Of TKey, T), Boolean)
-  fullName: MGeLabs.Utils.GameObjects.CacheDictionary<TKey, T>.GetOrAdd(TKey, System.Func<TKey, T>, System.Boolean)
-  fullName.vb: MGeLabs.Utils.GameObjects.CacheDictionary(Of TKey, T).GetOrAdd(TKey, System.Func(Of TKey, T), System.Boolean)
+  fullName: MGeLabs.Utils.GameObjects.CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, System.Boolean)
+  fullName.vb: MGeLabs.Utils.GameObjects.CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), System.Boolean)
   nameWithType: CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, Boolean)
   nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), Boolean)
 - uid: MGeLabs.Utils.GameObjects.CacheDictionary`2.GetOrAdd*
@@ -4589,11 +4576,11 @@ references:
   commentId: T:MGeLabs.Utils.Reflection.PredefinedAssemblyUtil
   fullName: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil
   nameWithType: PredefinedAssemblyUtil
-- uid: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type,System.Boolean)
+- uid: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(Type,System.Boolean)
   name: GetTypes(Type, Boolean)
-  href: api/MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.html#MGeLabs_Utils_Reflection_PredefinedAssemblyUtil_GetTypes_System_Type_System_Boolean_
-  commentId: M:MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type,System.Boolean)
-  fullName: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type, System.Boolean)
+  href: api/MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.html#MGeLabs_Utils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_System_Boolean_
+  commentId: M:MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(Type,System.Boolean)
+  fullName: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes(Type, System.Boolean)
   nameWithType: PredefinedAssemblyUtil.GetTypes(Type, Boolean)
 - uid: MGeLabs.Utils.Reflection.PredefinedAssemblyUtil.GetTypes*
   name: GetTypes
@@ -4614,11 +4601,11 @@ references:
   commentId: T:MGeLabs.Utils.SceneManagement.SceneLoader
   fullName: MGeLabs.Utils.SceneManagement.SceneLoader
   nameWithType: SceneLoader
-- uid: MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32,System.Action)
+- uid: MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32,Action)
   name: LoadScene(Int32, Action)
-  href: api/MGeLabs.Utils.SceneManagement.SceneLoader.html#MGeLabs_Utils_SceneManagement_SceneLoader_LoadScene_System_Int32_System_Action_
-  commentId: M:MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32,System.Action)
-  fullName: MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32, System.Action)
+  href: api/MGeLabs.Utils.SceneManagement.SceneLoader.html#MGeLabs_Utils_SceneManagement_SceneLoader_LoadScene_System_Int32_Action_
+  commentId: M:MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32,Action)
+  fullName: MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene(System.Int32, Action)
   nameWithType: SceneLoader.LoadScene(Int32, Action)
 - uid: MGeLabs.Utils.SceneManagement.SceneLoader.LoadScene*
   name: LoadScene

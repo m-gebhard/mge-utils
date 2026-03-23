@@ -126,7 +126,7 @@
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_System_Func_Transform_System_Boolean__System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,System.Func{Transform,System.Boolean},System.Boolean)">FindInHierarchy(Transform, Func&lt;Transform, Boolean&gt;, Boolean)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,Func{Transform,System.Boolean},System.Boolean)">FindInHierarchy(Transform, Func&lt;Transform, Boolean&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Finds all Transforms in the hierarchy of the given root Transform that match the specified filter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -151,7 +151,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">Transform</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Transform</span>, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">filter</span></td>
         <td><p>A function that defines the condition each Transform must satisfy to be included in the results.</p>
 </td>
@@ -180,7 +180,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_System_Func_Transform_System_Boolean__System_Boolean__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean__examples">Examples</h5>
   <pre><code>// Find all transforms whose name contains &quot;Hand&quot;.
 Transform[] hands = rootTransform.FindInHierarchy(
     t => t.name.Contains(&quot;Hand&quot;)
@@ -189,7 +189,7 @@ Transform[] hands = rootTransform.FindInHierarchy(
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position and rotation of a target Transform over a specified duration.
 Can optionally move in local space.</p>
 </div>
@@ -233,7 +233,7 @@ Can optionally move in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the rotation is complete.</p>
 </td>
@@ -250,19 +250,19 @@ Can optionally move in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(characterTransform.MoveAndRotateToTransform(spawnTransform, 1.2f));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,System.Action)">MoveToPosition(Transform, Vector3, Single, Boolean, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean,Action)">MoveToPosition(Transform, Vector3, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to a specified position over a given duration.
 Can optionally move in local space.</p>
 </div>
@@ -306,7 +306,7 @@ Can optionally move in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the rotation is complete.</p>
 </td>
@@ -323,19 +323,19 @@ Can optionally move in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(platformTransform.MoveToPosition(new Vector3(0f, 3f, 0f), 0.8f));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)">MoveToTransform(Transform, Transform, Single, Boolean, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean,Action)">MoveToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position of a target Transform over a specified duration.
 Can optionally move in local space.</p>
 </div>
@@ -379,7 +379,7 @@ Can optionally move in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the rotation is complete.</p>
 </td>
@@ -396,13 +396,13 @@ Can optionally move in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(enemyTransform.MoveToTransform(playerTransform, 1f, false));
 StartCoroutine(handTransform.MoveToTransform(itemSlotTransform, 0.5f));</code></pre>
 
@@ -610,7 +610,7 @@ if (transform.RaycastDirection(
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,System.Action)">RotateToRotation(Transform, Quaternion, Single, Boolean, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean,Action)">RotateToRotation(Transform, Quaternion, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly rotates a Transform to a specified Quaternion rotation over a given duration.
 Can optionally rotate in local space.</p>
 </div>
@@ -654,7 +654,7 @@ Can optionally rotate in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the rotation is complete.</p>
 </td>
@@ -671,20 +671,20 @@ Can optionally rotate in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(propellerTransform.RotateToRotation(Quaternion.Euler(0f, 0f, 360f), 2f, false));
 StartCoroutine(cameraTransform.RotateToRotation(Quaternion.Euler(15f, 0f, 0f), 1f, true));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,System.Action)">RotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean,Action)">RotateToTransform(Transform, Transform, Single, Boolean, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly rotates a Transform to match another Transform&apos;s rotation over a specified duration.
 Can optionally rotate in local space.</p>
 </div>
@@ -728,7 +728,7 @@ Can optionally rotate in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>An optional callback to invoke when the rotation is complete.</p>
 </td>
@@ -745,19 +745,19 @@ Can optionally rotate in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(turretTransform.RotateToTransform(enemyTransform, 0.7f, false));</code></pre>
 
   
   
   <a id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.ScaleTo*"></a>
-  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_System_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,System.Action)">ScaleTo(Transform, Vector3, Single, Action)</h4>
+  <h4 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action_" data-uid="MGeLabs.Utils.Extensions.TransformExtension.ScaleTo(Transform,Vector3,System.Single,Action)">ScaleTo(Transform, Vector3, Single, Action)</h4>
   <div class="markdown level1 summary"><p>Smoothly scales a Transform to a target scale over a specified duration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -794,7 +794,7 @@ Can optionally rotate in local space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>Optional callback when scaling completes.</p>
 </td>
@@ -811,13 +811,13 @@ Can optionally rotate in local space.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An IEnumerator for coroutine use.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_System_Action__examples">Examples</h5>
+  <h5 id="MGeLabs_Utils_Extensions_TransformExtension_ScaleTo_Transform_Vector3_System_Single_Action__examples">Examples</h5>
   <pre><code>StartCoroutine(transform.ScaleTo(new Vector3(2f, 1f, 1f), 0.3f));</code></pre>
 
 </article>
