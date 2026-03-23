@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace MGeLabs.Utils.Editor
+namespace MGeLabs.Utils.Attributes
 {
     /// <summary>
     /// Attribute that marks a field as read-only in the Unity Inspector.
