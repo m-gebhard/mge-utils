@@ -1,6 +1,18 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: MGeLabs.Utils.Attributes
+  name: MGeLabs.Utils.Attributes
+  href: api/MGeLabs.Utils.Attributes.html
+  commentId: N:MGeLabs.Utils.Attributes
+  fullName: MGeLabs.Utils.Attributes
+  nameWithType: MGeLabs.Utils.Attributes
+- uid: MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute
+  name: ReadOnlyFieldAttribute
+  href: api/MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute.html
+  commentId: T:MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute
+  fullName: MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute
+  nameWithType: ReadOnlyFieldAttribute
 - uid: MGeLabs.Utils.Data
   name: MGeLabs.Utils.Data
   href: api/MGeLabs.Utils.Data.html
@@ -1528,12 +1540,6 @@ references:
   commentId: T:MGeLabs.Utils.Editor.ColliderBoundsDrawer
   fullName: MGeLabs.Utils.Editor.ColliderBoundsDrawer
   nameWithType: ColliderBoundsDrawer
-- uid: MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
-  name: ReadOnlyFieldAttribute
-  href: api/MGeLabs.Utils.Editor.ReadOnlyFieldAttribute.html
-  commentId: T:MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
-  fullName: MGeLabs.Utils.Editor.ReadOnlyFieldAttribute
-  nameWithType: ReadOnlyFieldAttribute
 - uid: MGeLabs.Utils.EventSystem
   name: MGeLabs.Utils.EventSystem
   href: api/MGeLabs.Utils.EventSystem.html

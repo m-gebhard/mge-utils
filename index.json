@@ -1,4 +1,14 @@
 {
+  "api/MGeLabs.Utils.Attributes.html": {
+    "href": "api/MGeLabs.Utils.Attributes.html",
+    "title": "Namespace MGeLabs.Utils.Attributes | MGeUtils Documentation",
+    "keywords": "Namespace MGeLabs.Utils.Attributes Classes ReadOnlyFieldAttribute Attribute that marks a field as read-only in the Unity Inspector. Apply this attribute to a field to render it disabled (non-editable) in the editor."
+  },
+  "api/MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute.html": {
+    "href": "api/MGeLabs.Utils.Attributes.ReadOnlyFieldAttribute.html",
+    "title": "Class ReadOnlyFieldAttribute | MGeUtils Documentation",
+    "keywords": "Class ReadOnlyFieldAttribute Attribute that marks a field as read-only in the Unity Inspector. Apply this attribute to a field to render it disabled (non-editable) in the editor. Inheritance System.Object ReadOnlyFieldAttribute Namespace : MGeLabs.Utils.Attributes Assembly : cs.temp.dll.dll Syntax public class ReadOnlyFieldAttribute : PropertyAttribute"
+  },
   "api/MGeLabs.Utils.Data.Batcher.html": {
     "href": "api/MGeLabs.Utils.Data.Batcher.html",
     "title": "Class Batcher | MGeUtils Documentation",
@@ -117,12 +127,7 @@
   "api/MGeLabs.Utils.Editor.html": {
     "href": "api/MGeLabs.Utils.Editor.html",
     "title": "Namespace MGeLabs.Utils.Editor | MGeUtils Documentation",
-    "keywords": "Namespace MGeLabs.Utils.Editor Classes ColliderBoundsDrawer A MonoBehaviour that visualizes the bounds of a Collider in the Unity Editor. ReadOnlyFieldAttribute Attribute that marks a field as read-only in the Unity Inspector. Apply this attribute to a field to render it disabled (non-editable) in the editor."
-  },
-  "api/MGeLabs.Utils.Editor.ReadOnlyFieldAttribute.html": {
-    "href": "api/MGeLabs.Utils.Editor.ReadOnlyFieldAttribute.html",
-    "title": "Class ReadOnlyFieldAttribute | MGeUtils Documentation",
-    "keywords": "Class ReadOnlyFieldAttribute Attribute that marks a field as read-only in the Unity Inspector. Apply this attribute to a field to render it disabled (non-editable) in the editor. Inheritance System.Object ReadOnlyFieldAttribute Namespace : MGeLabs.Utils.Editor Assembly : cs.temp.dll.dll Syntax public class ReadOnlyFieldAttribute : PropertyAttribute"
+    "keywords": "Namespace MGeLabs.Utils.Editor Classes ColliderBoundsDrawer A MonoBehaviour that visualizes the bounds of a Collider in the Unity Editor."
   },
   "api/MGeLabs.Utils.EventSystem.EventChannel-1.html": {
     "href": "api/MGeLabs.Utils.EventSystem.EventChannel-1.html",
