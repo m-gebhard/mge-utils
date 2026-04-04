@@ -117,9 +117,11 @@ namespace MGeLabs.Utils.Data
         /// Updates the current value by interpolating towards the target value.
         /// </summary>
         /// <param name="deltaTime">The time elapsed since the last update.</param>
-        public virtual void Update(float deltaTime)
+        /// <returns>The updated current value after interpolation.</returns>
+        public virtual T Update(float deltaTime)
         {
             currentValue = lerpFunc(currentValue, targetValue, deltaTime * lerpSpeed);
+            return currentValue;
         }
     }
 }
