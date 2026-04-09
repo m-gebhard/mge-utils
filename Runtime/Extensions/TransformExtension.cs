@@ -325,6 +325,43 @@ namespace MGeLabs.Utils.Extensions
             target.localScale = end;
         }
 
+        /// <summary>
+        /// Applies a punch-scale animation to the transform, simulating an elastic hit effect
+        /// that decays back to the original scale over the specified duration.
+        /// </summary>
+        /// <param name="transform">The transform to animate.</param>
+        /// <param name="punch">The target scale to punch towards. The animation will start from the current scale and punch towards this value before decaying back.</param>
+        /// <param name="duration">Total duration of the animation in seconds.</param>
+        /// <param name="vibrato">Number of oscillations over the duration. Higher values produce faster back-and-forth wobbling.</param>
+        /// <param name="elasticity">Blends between a simple decay (<c>0</c>) and a sinusoidal oscillating decay (<c>1</c>).</param>
+        /// <returns>An <see cref="IEnumerator"/> to be run as a coroutine.</returns>
+        public static IEnumerator PunchScale(
+            this Transform transform,
+            Vector3 punch,
+            float duration = 0.3f,
+            int vibrato = 1,
+            float elasticity = 0.5f)
+        {
+            Vector3 originalScale = transform.localScale;
+            Vector3 punchOffset = punch - originalScale;
+            float elapsed = 0f;
+            float frequency = vibrato / duration;
+
+            while (elapsed < duration)
+            {
+                elapsed += Time.deltaTime;
+                float t = Mathf.Clamp01(elapsed / duration);
+                float decay = 1f - t;
+                float sine = Mathf.Sin(2f * Mathf.PI * frequency * elapsed);
+                float wave = Mathf.Max(0f, Mathf.Lerp(decay, decay * sine, elasticity));
+
+                transform.localScale = originalScale + punchOffset * wave;
+                yield return null;
+            }
+
+            transform.localScale = originalScale;
+        }
+
         #endregion
 
         #region Raycast
