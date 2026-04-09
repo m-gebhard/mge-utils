@@ -2657,6 +2657,19 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.TransformExtension.MoveToTransform
   nameWithType: TransformExtension.MoveToTransform
+- uid: MGeLabs.Utils.Extensions.TransformExtension.PunchScale(Transform,Vector3,System.Single,System.Int32,System.Single)
+  name: PunchScale(Transform, Vector3, Single, Int32, Single)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_PunchScale_Transform_Vector3_System_Single_System_Int32_System_Single_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.PunchScale(Transform,Vector3,System.Single,System.Int32,System.Single)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.PunchScale(Transform, Vector3, System.Single, System.Int32, System.Single)
+  nameWithType: TransformExtension.PunchScale(Transform, Vector3, Single, Int32, Single)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.PunchScale*
+  name: PunchScale
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_PunchScale_
+  commentId: Overload:MGeLabs.Utils.Extensions.TransformExtension.PunchScale
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.PunchScale
+  nameWithType: TransformExtension.PunchScale
 - uid: MGeLabs.Utils.Extensions.TransformExtension.Raycast(Transform,Vector3,RaycastHit@,LayerMask,Vector3,Vector3,System.Single,QueryTriggerInteraction,System.Boolean)
   name: Raycast(Transform, Vector3, out RaycastHit, LayerMask, Vector3, Vector3, Single, QueryTriggerInteraction, Boolean)
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_Raycast_Transform_Vector3_RaycastHit__LayerMask_Vector3_Vector3_System_Single_QueryTriggerInteraction_System_Boolean_
