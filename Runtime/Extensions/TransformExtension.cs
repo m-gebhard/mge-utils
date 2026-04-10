@@ -537,6 +537,15 @@ namespace MGeLabs.Utils.Extensions
                 : results.ToArray();
         }
 
+        /// <summary>
+        /// Destroys all child GameObjects of the given transform.
+        /// </summary>
+        /// <param name="transform">The transform whose children will be destroyed.</param>
+        public static void DestroyChildren(this Transform transform)
+        {
+            foreach (Transform child in transform) Object.Destroy(child.gameObject);
+        }
+
         #endregion
     }
 }
