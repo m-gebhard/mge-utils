@@ -2602,6 +2602,19 @@ references:
   commentId: T:MGeLabs.Utils.Extensions.TransformExtension
   fullName: MGeLabs.Utils.Extensions.TransformExtension
   nameWithType: TransformExtension
+- uid: MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren(Transform)
+  name: DestroyChildren(Transform)
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_DestroyChildren_Transform_
+  commentId: M:MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren(Transform)
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren(Transform)
+  nameWithType: TransformExtension.DestroyChildren(Transform)
+- uid: MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren*
+  name: DestroyChildren
+  href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_DestroyChildren_
+  commentId: Overload:MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.TransformExtension.DestroyChildren
+  nameWithType: TransformExtension.DestroyChildren
 - uid: MGeLabs.Utils.Extensions.TransformExtension.FindInHierarchy(Transform,Func{Transform,System.Boolean},System.Boolean)
   name: FindInHierarchy(Transform, Func<Transform, Boolean>, Boolean)
   href: api/MGeLabs.Utils.Extensions.TransformExtension.html#MGeLabs_Utils_Extensions_TransformExtension_FindInHierarchy_Transform_Func_Transform_System_Boolean__System_Boolean_
