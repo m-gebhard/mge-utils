@@ -2551,6 +2551,25 @@ references:
   isSpec: "True"
   fullName: MGeLabs.Utils.Extensions.RectTransformExtension.RebuildLayout
   nameWithType: RectTransformExtension.RebuildLayout
+- uid: MGeLabs.Utils.Extensions.ScrollRectExtension
+  name: ScrollRectExtension
+  href: api/MGeLabs.Utils.Extensions.ScrollRectExtension.html
+  commentId: T:MGeLabs.Utils.Extensions.ScrollRectExtension
+  fullName: MGeLabs.Utils.Extensions.ScrollRectExtension
+  nameWithType: ScrollRectExtension
+- uid: MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll(ScrollRect,System.Single,System.Int32)
+  name: ResetContentScroll(ScrollRect, Single, Int32)
+  href: api/MGeLabs.Utils.Extensions.ScrollRectExtension.html#MGeLabs_Utils_Extensions_ScrollRectExtension_ResetContentScroll_ScrollRect_System_Single_System_Int32_
+  commentId: M:MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll(ScrollRect,System.Single,System.Int32)
+  fullName: MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll(ScrollRect, System.Single, System.Int32)
+  nameWithType: ScrollRectExtension.ResetContentScroll(ScrollRect, Single, Int32)
+- uid: MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll*
+  name: ResetContentScroll
+  href: api/MGeLabs.Utils.Extensions.ScrollRectExtension.html#MGeLabs_Utils_Extensions_ScrollRectExtension_ResetContentScroll_
+  commentId: Overload:MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.ScrollRectExtension.ResetContentScroll
+  nameWithType: ScrollRectExtension.ResetContentScroll
 - uid: MGeLabs.Utils.Extensions.StringExtension
   name: StringExtension
   href: api/MGeLabs.Utils.Extensions.StringExtension.html

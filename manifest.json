@@ -542,6 +542,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MGeLabs.Utils.Extensions.ScrollRectExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MGeLabs.Utils.Extensions.ScrollRectExtension.html",
+          "hash": "P1vINej+sferpWoUPvhTpq19cFfphArhTcxelhefcA4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MGeLabs.Utils.Extensions.StringExtension.yml",
       "output": {
         ".html": {
@@ -582,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MGeLabs.Utils.Extensions.html",
-          "hash": "g6CAD/GwRS45HSFIdf0bhIXHxVnFqyfxBWmnplHXhqs="
+          "hash": "E+MGXZ6F7Woq0Dkq6yiD0Ix24Y25jtiQTq8EPOPqQOk="
         }
       },
       "is_incremental": false,
@@ -930,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "f4+1ZoapUDnwDZ/Y3n8VFuR+5rNdACoW+7Ym5SYpIMg="
+          "hash": "+9wpkRGQezVeytDiaEP9m8Ydibo0ySqDv+CpGWlgNv4="
         }
       },
       "is_incremental": false,
@@ -996,7 +1008,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 76,
+          "total_file_count": 77,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
