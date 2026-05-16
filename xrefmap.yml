@@ -2320,6 +2320,22 @@ references:
   fullName.vb: MGeLabs.Utils.Extensions.ListExtension.Random(Of T)(List(Of T), System.Int32)
   nameWithType: ListExtension.Random<T>(List<T>, Int32)
   nameWithType.vb: ListExtension.Random(Of T)(List(Of T), Int32)
+- uid: MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability*
+  name: RandomWithProbability
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_RandomWithProbability_
+  commentId: Overload:MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability
+  isSpec: "True"
+  fullName: MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability
+  nameWithType: ListExtension.RandomWithProbability
+- uid: MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability``1(List{``0},List{System.Single})
+  name: RandomWithProbability<T>(List<T>, List<Single>)
+  href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_RandomWithProbability__1_List___0__List_System_Single__
+  commentId: M:MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability``1(List{``0},List{System.Single})
+  name.vb: RandomWithProbability(Of T)(List(Of T), List(Of Single))
+  fullName: MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability<T>(List<T>, List<System.Single>)
+  fullName.vb: MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability(Of T)(List(Of T), List(Of System.Single))
+  nameWithType: ListExtension.RandomWithProbability<T>(List<T>, List<Single>)
+  nameWithType.vb: ListExtension.RandomWithProbability(Of T)(List(Of T), List(Of Single))
 - uid: MGeLabs.Utils.Extensions.ListExtension.Replace*
   name: Replace
   href: api/MGeLabs.Utils.Extensions.ListExtension.html#MGeLabs_Utils_Extensions_ListExtension_Replace_

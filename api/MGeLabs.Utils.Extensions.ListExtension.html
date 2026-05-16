@@ -1056,6 +1056,99 @@ List&lt;int> randomSubset = numbers.Random(3);
   </table>
   
   
+  <a id="MGeLabs_Utils_Extensions_ListExtension_RandomWithProbability_" data-uid="MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability*"></a>
+  <h4 id="MGeLabs_Utils_Extensions_ListExtension_RandomWithProbability__1_List___0__List_System_Single__" data-uid="MGeLabs.Utils.Extensions.ListExtension.RandomWithProbability``1(List{``0},List{System.Single})">RandomWithProbability&lt;T&gt;(List&lt;T&gt;, List&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns one random element from <code data-dev-comment-type="paramref" class="paramref">list</code> using weighted probabilities.
+Each value in <code data-dev-comment-type="paramref" class="paramref">probabilities</code> corresponds by index to an item in <code data-dev-comment-type="paramref" class="paramref">list</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T RandomWithProbability&lt;T&gt;(this List&lt;T&gt; list, List&lt;float&gt; probabilities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>Source items to choose from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">probabilities</span></td>
+        <td><p>Weight values for each item. Must have the same number of elements as <code data-dev-comment-type="paramref" class="paramref">list</code>.
+Higher values increase the chance of selecting the corresponding item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A randomly selected item from <code data-dev-comment-type="paramref" class="paramref">list</code> based on the provided weights.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of element in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MGeLabs_Utils_Extensions_ListExtension_RandomWithProbability__1_List___0__List_System_Single___examples">Examples</h5>
+  <pre><code>List&lt;string> loot = new() { &quot;Common&quot;, &quot;Rare&quot;, &quot;Epic&quot; };
+List&lt;float> weights = new() { 70f, 25f, 5f };
+
+string result = loot.RandomWithProbability(weights);
+// result is most likely &quot;Common&quot;, less likely &quot;Rare&quot;, and rarely &quot;Epic&quot;</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">list</code> is empty, when list sizes do not match,
+or when the sum of all probabilities is less than or equal to zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="MGeLabs_Utils_Extensions_ListExtension_Replace_" data-uid="MGeLabs.Utils.Extensions.ListExtension.Replace*"></a>
   <h4 id="MGeLabs_Utils_Extensions_ListExtension_Replace__1_List___0____0___0_" data-uid="MGeLabs.Utils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)">Replace&lt;T&gt;(List&lt;T&gt;, T, T)</h4>
   <div class="markdown level1 summary"><p>Replaces the first occurrence of a specified item in the list with a new item.</p>
