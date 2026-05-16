@@ -243,6 +243,63 @@ namespace MGeLabs.Utils.Extensions
         }
 
         /// <summary>
+        /// Returns one random element from <paramref name="list"/> using weighted probabilities.
+        /// Each value in <paramref name="probabilities"/> corresponds by index to an item in <paramref name="list"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of element in the list.</typeparam>
+        /// <param name="list">Source items to choose from.</param>
+        /// <param name="probabilities">
+        /// Weight values for each item. Must have the same number of elements as <paramref name="list"/>.
+        /// Higher values increase the chance of selecting the corresponding item.
+        /// </param>
+        /// <returns>A randomly selected item from <paramref name="list"/> based on the provided weights.</returns>
+        /// <exception cref="System.ArgumentException">
+        /// Thrown when <paramref name="list"/> is empty, when list sizes do not match,
+        /// or when the sum of all probabilities is less than or equal to zero.
+        /// </exception>
+        /// <example>
+        /// <code>
+        /// List&lt;string&gt; loot = new() { "Common", "Rare", "Epic" };
+        /// List&lt;float&gt; weights = new() { 70f, 25f, 5f };
+        ///
+        /// string result = loot.RandomWithProbability(weights);
+        /// // result is most likely "Common", less likely "Rare", and rarely "Epic"
+        /// </code>
+        /// </example>
+        public static T RandomWithProbability<T>(this List<T> list, List<float> probabilities)
+        {
+            if (list.Count == 0)
+            {
+                throw new ArgumentException($"List<{typeof(T)}> must not be empty.");
+            }
+
+            if (probabilities.Count != list.Count)
+            {
+                throw new ArgumentException("Probabilities list must have the same number of elements as the input list.");
+            }
+
+            float total = probabilities.Sum();
+            if (total <= 0)
+            {
+                throw new ArgumentException("Total probability must be greater than zero.");
+            }
+
+            float randomValue = UnityEngine.Random.Range(0, total);
+            float cumulative = 0;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                cumulative += probabilities[i];
+                if (randomValue < cumulative)
+                {
+                    return list[i];
+                }
+            }
+
+            return list.Last();
+        }
+
+        /// <summary>
         /// Returns the next element in the list after the specified item.
         /// If the item is not found, returns the first element if the list is not empty, otherwise returns the default value for the type.
         /// </summary>
@@ -538,3 +595,4 @@ namespace MGeLabs.Utils.Extensions
         #endregion
     }
 }
+
