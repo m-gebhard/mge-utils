@@ -1,6 +1,6 @@
 {
   "name": "com.mgelabs.utils",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "displayName": "MGe Utils",
   "description": "A collection of utility scripts, classes and extensions for Unity.",
   "unity": "2022.3",
