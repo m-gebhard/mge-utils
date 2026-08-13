@@ -14,7 +14,11 @@ namespace MGeLabs.Utils.Editor
         [MenuItem("Tools/MGe Labs/Check Duplicate GUIDs")]
         public static void CheckForDuplicateGUIDs()
         {
+#if UNITY_6000_4_OR_NEWER
+            PersistentObject[] allObjects = FindObjectsByType<PersistentObject>();
+#else
             PersistentObject[] allObjects = FindObjectsByType<PersistentObject>(FindObjectsSortMode.None);
+#endif
             Dictionary<string, List<PersistentObject>> guidMap = new Dictionary<string, List<PersistentObject>>();
 
             foreach (PersistentObject obj in allObjects)

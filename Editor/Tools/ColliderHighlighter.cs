@@ -94,7 +94,11 @@ namespace MGeLabs.Utils.Editor
             triggerCount = 0;
             normalCount = 0;
 
+#if UNITY_6000_4_OR_NEWER
+            foreach (Collider collider in FindObjectsByType<Collider>())
+#else
             foreach (Collider collider in FindObjectsByType<Collider>(FindObjectsSortMode.None))
+#endif
             {
                 if (onlyTriggers && !collider.isTrigger) continue;
 

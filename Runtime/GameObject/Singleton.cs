@@ -20,7 +20,7 @@ namespace MGeLabs.Utils.GameObjects
             {
                 if (instance != null) return instance;
 
-                instance = FindFirstObjectByType<T>();
+                instance = FindAnyObjectByType<T>();
 
                 return instance;
             }
