@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace MGeLabs.Utils.Extensions
 {
@@ -15,7 +16,14 @@ namespace MGeLabs.Utils.Extensions
         /// </summary>
         /// <param name="obj">The object to get the type prefix for.</param>
         /// <returns>A string representing the type prefix of the object.</returns>
-        private static string GetObjectTypePrefix(this object obj) => $"[{obj.GetType().Name}] ";
+        private static string GetObjectTypePrefix(object obj) => $"[{obj.GetType().Name}] ";
+
+        /// <summary>
+        /// Gets the Unity context of the object.
+        /// </summary>
+        /// <param name="obj">The object to get the context for.</param>
+        /// <returns>The object as a <see cref="UnityEngine.Object"/>, or null.</returns>
+        private static Object GetLogContext(object obj) => obj as Object;
 
         /// <summary>
         /// Outputs multiple messages using the specified logging function.
@@ -23,13 +31,19 @@ namespace MGeLabs.Utils.Extensions
         /// <param name="obj">The object to log the messages for.</param>
         /// <param name="logFunction">The logging function to use (e.g., Debug.Log).</param>
         /// <param name="messages">The messages to log.</param>
-        private static void OutputMultiple(this object obj, Action<string> logFunction, params object[] messages) =>
-            logFunction($"{GetObjectTypePrefix(obj)} {string.Join($"{LogValueSeparator} ", messages)}");
+        private static void OutputMultiple(
+            object obj,
+            Action<object, Object> logFunction,
+            params object[] messages
+        ) => logFunction(
+            $"{GetObjectTypePrefix(obj)} {string.Join($"{LogValueSeparator} ", messages)}",
+            GetLogContext(obj)
+        );
 
         #region Log Methods
 
         /// <summary>
-        /// Logs a message with the object's type prefix.
+        /// Logs a message with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the message for.</param>
         /// <param name="message">The message to log.</param>
@@ -39,10 +53,10 @@ namespace MGeLabs.Utils.Extensions
         /// </code>
         /// </example>
         public static void Log(this object obj, object message) =>
-            Debug.Log($"{GetObjectTypePrefix(obj)} {message}");
+            Debug.Log($"{GetObjectTypePrefix(obj)} {message}", GetLogContext(obj));
 
         /// <summary>
-        /// Logs multiple messages with the object's type prefix.
+        /// Logs multiple messages with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the messages for.</param>
         /// <param name="messages">The messages to log.</param>
@@ -51,10 +65,11 @@ namespace MGeLabs.Utils.Extensions
         /// this.Log("Health:", playerHealth, "Score:", playerScore);
         /// </code>
         /// </example>
-        public static void Log(this object obj, params object[] messages) => OutputMultiple(obj, Debug.Log, messages);
+        public static void Log(this object obj, params object[] messages)
+            => OutputMultiple(obj, Debug.Log, messages);
 
         /// <summary>
-        /// Logs a warning message with the object's type prefix.
+        /// Logs a warning message with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the warning message for.</param>
         /// <param name="message">The warning message to log.</param>
@@ -64,10 +79,10 @@ namespace MGeLabs.Utils.Extensions
         /// </code>
         /// </example>
         public static void LogWarning(this object obj, object message) =>
-            Debug.LogWarning($"{GetObjectTypePrefix(obj)} {message}");
+            Debug.LogWarning($"{GetObjectTypePrefix(obj)} {message}", GetLogContext(obj));
 
         /// <summary>
-        /// Logs multiple warning messages with the object's type prefix.
+        /// Logs multiple warning messages with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the warning messages for.</param>
         /// <param name="messages">The warning messages to log.</param>
@@ -80,7 +95,7 @@ namespace MGeLabs.Utils.Extensions
             OutputMultiple(obj, Debug.LogWarning, messages);
 
         /// <summary>
-        /// Logs an error message with the object's type prefix.
+        /// Logs an error message with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the error message for.</param>
         /// <param name="message">The error message to log.</param>
@@ -90,10 +105,10 @@ namespace MGeLabs.Utils.Extensions
         /// </code>
         /// </example>
         public static void LogError(this object obj, object message) =>
-            Debug.LogError($"{GetObjectTypePrefix(obj)} {message}");
+            Debug.LogError($"{GetObjectTypePrefix(obj)} {message}", GetLogContext(obj));
 
         /// <summary>
-        /// Logs multiple error messages with the object's type prefix.
+        /// Logs multiple error messages with the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the error messages for.</param>
         /// <param name="messages">The error messages to log.</param>
@@ -106,7 +121,7 @@ namespace MGeLabs.Utils.Extensions
             OutputMultiple(obj, Debug.LogError, messages);
 
         /// <summary>
-        /// Logs an exception with the object's type prefix.
+        /// Logs an exception with the object's context.
         /// </summary>
         /// <param name="obj">The object to log the exception for.</param>
         /// <param name="exception">The exception to log.</param>
@@ -123,10 +138,10 @@ namespace MGeLabs.Utils.Extensions
         /// </code>
         /// </example>
         public static void LogException(this object obj, Exception exception) =>
-            Debug.LogException(exception);
+            Debug.LogException(exception, GetLogContext(obj));
 
         /// <summary>
-        /// Logs an exception with a custom message and the object's type prefix.
+        /// Logs an exception with a custom message, the object's type prefix and context.
         /// </summary>
         /// <param name="obj">The object to log the exception for.</param>
         /// <param name="message">The custom message to include with the exception.</param>
@@ -143,8 +158,11 @@ namespace MGeLabs.Utils.Extensions
         /// }
         /// </code>
         /// </example>
-        public static void LogException(this object obj, string message, Exception exception) =>
-            Debug.LogException(new Exception($"{GetObjectTypePrefix(obj)} {message}", exception));
+        public static void LogException(this object obj, string message, Exception exception)
+            => Debug.LogException(
+                new Exception($"{GetObjectTypePrefix(obj)} {message}", exception),
+                GetLogContext(obj)
+            );
 
         #endregion
     }
